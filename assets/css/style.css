@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+header{
+    position: fixed;
+    height: 55px;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+#about{
+    background-color: yellow;
+}
+
+#projetos{
+    background-color: tomato;
+}
+
+#contato{
+    background-color: green;
+}
+
+/* Landing Page */
+#presentation, #about, #projetos, #contato {
+    padding-top: 5px;
+    height: 100vh
+}
+
+
+@media (max-width: 768px){
+    #presentation, #about, #projetos, #contato {
+        padding-top: 12px;
+    }
+
+    .nav-item{
+        padding-right: 10px;
+    }
+}

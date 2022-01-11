@@ -1,0 +1,1 @@
+document.getElementById("cabecalho").style.backgroundColor = "pink"
