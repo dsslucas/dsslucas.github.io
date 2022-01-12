@@ -31,6 +31,7 @@ header{
 #presentation .column-image, #presentation .column-content{
     display: flex;
     flex-direction: column;
+    
 }
 
 #presentation .column-image{
@@ -38,12 +39,12 @@ header{
     align-items: center;
 }
 
-
 #presentation .column-content{
 
     justify-content: center;
     text-align: justify;
     padding-right: 25px;
+    
 }
 
 #presentation .contact-info a{
@@ -264,15 +265,17 @@ h2, h4 {
         border-radius: 8px;
     }
 
-    #presentation .column-content, #presentation .column-image{
+    #presentation .column-image{
         align-items: center;
         justify-content: center;
         margin-top: 10px;
     }
 
-    #presentation p, #presentation a{
+    #presentation .column-content, #presentation .column-content p{
         font-size: 25px;
-        background: lime;
+        margin: 0;
+        align-items: flex-start;
+        text-align: justify;
     }
 }
 
