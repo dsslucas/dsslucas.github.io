@@ -37,7 +37,7 @@ buttonCollapse.addEventListener("click", function (){
 window.addEventListener('scroll', function () {
     //Contempla apenas a página inicial
     console.log(window.pageYOffset)
-    if (window.pageYOffset <= 650) {
+    if (window.pageYOffset <= 640) {
         console.log("Na cor Dark")
         nav.classList.add('navbar-dark');
         nav.classList.remove("navbar-light")
@@ -49,17 +49,4 @@ window.addEventListener('scroll', function () {
         nav.classList.add("navbar-light")
         buttonReturn.style.display = "inline"
     }
-    /*
-    else if(window.pageYOffset > 700){
-        console.log("Saí da página inicial")
-        nav.classList.remove("navbar-dark")
-        nav.classList.add("navbar-light")
-    }
-    else {
-        console.log("Transparente")
-        nav.classList.remove('bg-light', 'shadow');
-        //nav.classList.add('navbar-light')
-        buttonOptions.classList.remove('show')
-    }
-    */
 });
