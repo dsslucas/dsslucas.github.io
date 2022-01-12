@@ -20,7 +20,7 @@ header{
 
 /* Configurações individuais de cada Landing Page */
 #presentation{
-    /*background-color: rgb(38, 69, 126);*/
+    background-image: url('/assets/img/wallpaper.jpg');
 }
 
 #presentation img{
@@ -42,6 +42,7 @@ header{
     /*background: yellow;*/
     justify-content: center;
     text-align: justify;
+    padding-right: 25px;
 }
 
 #presentation .contact-info a{
