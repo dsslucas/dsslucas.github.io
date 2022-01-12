@@ -38,8 +38,9 @@ header{
     align-items: center;
 }
 
+
 #presentation .column-content{
-    /*background: yellow;*/
+
     justify-content: center;
     text-align: justify;
     padding-right: 25px;
@@ -48,10 +49,10 @@ header{
 #presentation .contact-info a{
     font-size: 30px;
     color: black;
-    margin-right: 20px
-}
+    margin-left: 5px;
+    margin-right: 5px;
+} 
 
-/* Tela Sobre */ 
 #about{
     display: flex;
     flex-direction: column;
@@ -132,14 +133,146 @@ h2, h4 {
     text-align: center;
 }
 
-
-@media (max-width: 768px){
+/* XS Grid System */
+@media (max-width: 576px){
+    
     #presentation, #about, #projetos, #contato {
         padding-top: 12px;
     }
 
+    /* Do NAV */
     .nav-item{
         padding-right: 10px;
+    }
+
+    /* Apresentação */
+    #presentation img{
+        width: 280px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content, #presentation .column-image{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #presentation .column-content p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/* SM e MD Grid System */
+@media (min-width: 576px){
+    
+    #presentation, #about, #projetos, #contato {
+        padding-top: 12px;
+    }
+
+    /* Do NAV */
+    .nav-item{
+        padding-right: 10px;
+    }
+
+    /* Apresentação */
+    #presentation img{
+        width: 550px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content, #presentation .column-image{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #presentation .column-content p{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 25px;
+    }
+
+
+}
+
+/* LG Grid System */
+@media (min-width: 992px){
+    
+    #presentation, #about, #projetos, #contato {
+        padding-top: 12px;
+    }
+
+    /* Apresentação */
+    #presentation img{
+        width: 600px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content, #presentation .column-image{
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #presentation .column-content p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #presentation h1, #presentation p, #presentation a{
+        text-align: center;
+    }
+}
+
+/* Caso específico: Nest Hub */
+@media (min-width: 1024px){
+    
+    #presentation, #about, #projetos, #contato {
+        padding-top: 12px;
+    }
+
+
+    #presentation img{
+        width: 250px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content, #presentation .column-image{
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #presentation p, #presentation a{
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1200px){   
+    #presentation, #about, #projetos, #contato {
+        padding-top: 12px;
+    }
+
+    /* Apresentação */
+    #presentation img{
+        width: 600px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content, #presentation .column-image{
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #presentation p, #presentation a{
+        font-size: 25px;
+        background: lime;
     }
 }
 
