@@ -37,7 +37,7 @@ buttonCollapse.addEventListener("click", function (){
 window.addEventListener('scroll', function () {
     //Contempla apenas a página inicial
     console.log(window.pageYOffset)
-    if (window.pageYOffset <= 640) {
+    if (window.pageYOffset < 657) {
         console.log("Na cor Dark")
         nav.classList.add('navbar-dark');
         nav.classList.remove("navbar-light")
