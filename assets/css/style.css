@@ -1,13 +1,16 @@
 body{
     display: flex;
     flex-direction: column;
-
+    overflow-x: hidden;
 }
 
-
+/* Tudo do Header */
 header{
-    position: fixed;
-    height: 55px;
+    position: absolute;
+}
+
+#navbarTogglerDemo02 ul li a{
+    font-size: 18px;
 }
 
 .nav-item{
@@ -15,32 +18,117 @@ header{
     justify-content: flex-end;
 }
 
-
+/* Configurações individuais de cada Landing Page */
 #presentation{
+    /*background-color: rgb(38, 69, 126);*/
+}
+
+#presentation img{
+    width: 550px;
+    border-radius: 8px;
+}
+
+#presentation .column-image, #presentation .column-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation .column-image{
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation .column-content{
+    /*background: yellow;*/
+    justify-content: center;
+    text-align: justify;
+}
+
+#presentation .contact-info a{
+    font-size: 30px;
+    color: black;
+    margin-right: 20px
+}
+
+/* Tela Sobre */ 
+#about{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background-color: cornflowerblue;
-}
-
-#about{
     background-color: yellow;
 }
 
+#about img{
+    height: 600px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+#about .row .about-content{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: start;
+}
+
+h2, h4 {
+    text-align: start;
+}
+
+/* Tela de Projetos */
 #projetos{
     background-color: tomato;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#projetos .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projetos .card{
+    margin-top: 5px;
+
+    
 }
 
 #contato{
     background-color: green;
 }
 
-/* Landing Page */
-#presentation, #about, #projetos, #contato {
+/* Botão de retorno para a página inicial */
+#return{
+    background: gray;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+#return a {
+    color: black;
+}
+
+/* Landing Page, exceto Projetos que precisará de mais scroll*/
+#presentation, #about, #contato {
     padding-top: 5px;
-    height: 100vh
+    padding-bottom: 5px;
+    height: 100vh;
+
+}
+
+#presentation, #about, #projetos, #contato {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -52,4 +140,12 @@ header{
     .nav-item{
         padding-right: 10px;
     }
+}
+
+.teste1{
+    background: #fff;
+}
+
+.teste2{
+    background: #eee;
 }

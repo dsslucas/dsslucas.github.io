@@ -6,6 +6,11 @@ var buttonCollapse = document.getElementById("botao-collapse")
 
 const buttonOptions = document.getElementById('navbarTogglerDemo02')
 
+window.addEventListener('load', function (){
+    console.log("Carreguei!")
+    nav.classList.add('navbar-light');
+})
+
 buttonCollapse.addEventListener("click", function (){
     console.log("Cliquei no botão")
     buttonOptions.style.display = "show"
