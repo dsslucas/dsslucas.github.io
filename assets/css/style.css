@@ -59,12 +59,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
 }
 
 #about img{
-    height: 600px;
-    width: 400px;
+    height: 560px;
+    width: 360px;
     border-radius: 8px;
 }
 
@@ -134,6 +133,10 @@ h2, h4 {
     text-align: center;
 }
 
+#about, #projetos, #contato {
+    background: #DCDCDC
+}
+
 /* XS Grid System */
 @media (max-width: 576px){
     
@@ -162,6 +165,21 @@ h2, h4 {
     #presentation .column-content p{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    #about{
+        height: auto;
+    }
+    
+    #about img{
+        height: 100%;
+        width: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+    
+    #about .row .about-content{
+
     }
 
 }
@@ -209,7 +227,7 @@ h2, h4 {
 
     /* Apresentação */
     #presentation img{
-        width: 600px;
+        width: 500px;
         border-radius: 8px;
     }
 
@@ -229,34 +247,9 @@ h2, h4 {
     }
 }
 
-/* Caso específico: Nest Hub */
-@media (min-width: 1024px){
-    
-    #presentation, #about, #projetos, #contato {
-        padding-top: 12px;
-    }
-
-
-    #presentation img{
-        width: 250px;
-        border-radius: 8px;
-    }
-
-    #presentation .column-content, #presentation .column-image{
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    #presentation p, #presentation a{
-        text-align: center;
-        font-size: 10px;
-    }
-}
-
 @media (min-width: 1200px){   
     #presentation, #about, #projetos, #contato {
-        padding-top: 12px;
+        padding-top: 15px;
     }
 
     /* Apresentação */
