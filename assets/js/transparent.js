@@ -43,6 +43,7 @@ window.addEventListener('scroll', function () {
         nav.classList.remove("navbar-light")
         buttonReturn.style.display = "none"
     }
+    
     else{
         console.log("Saí da página inicial")
         nav.classList.remove("navbar-dark")

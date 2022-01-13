@@ -2,6 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    font-family: 'Island Moments', cursive;
+
 }
 
 /* Tudo do Header */
@@ -40,11 +42,12 @@ header{
 }
 
 #presentation .column-content{
-
+    /*
     justify-content: center;
     text-align: justify;
     padding-right: 25px;
-    
+    */
+
 }
 
 #presentation .contact-info a{
@@ -62,13 +65,20 @@ header{
 }
 
 #about img{
+
     height: 560px;
     width: 360px;
+
     border-radius: 8px;
 }
 
+#about .about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #about .row .about-content{
-    background-color: darkcyan;
     display: flex;
     flex-direction: column;
 
@@ -138,7 +148,7 @@ h2, h4 {
 }
 
 /* XS Grid System */
-@media (max-width: 576px){
+@media only screen and (max-width: 600px){
     
     #presentation, #about, #projetos, #contato {
         padding-top: 12px;
@@ -148,6 +158,7 @@ h2, h4 {
     .nav-item{
         padding-right: 10px;
     }
+
 
     /* Apresentação */
     #presentation img{
@@ -172,20 +183,25 @@ h2, h4 {
     }
     
     #about img{
+        /*
         height: 100%;
         width: 250px;
+        */
+        max-height: fit-content;
+        max-width: 250px;
         padding-top: 10px;
-        padding-bottom: 10px
+        padding-bottom: 10px;
     }
-    
-    #about .row .about-content{
 
+    #projetos{
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
 }
 
-/* SM e MD Grid System */
-@media (min-width: 576px){
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
     
     #presentation, #about, #projetos, #contato {
         padding-top: 12px;
@@ -214,20 +230,59 @@ h2, h4 {
         margin-right: 50px;
         font-size: 25px;
     }
+    
+    #about .about-image img{
+        /*
+        max-height: max-content;
+        max-width: max-content;
 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        */
 
+    }
 }
 
-/* LG Grid System */
-@media (min-width: 992px){
-    
-    #presentation, #about, #projetos, #contato {
-        padding-top: 12px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    #presentation img{
+        width: 450px;
+        border-radius: 8px;
     }
 
-    /* Apresentação */
+    #presentation .column-content, #presentation .column-image{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #about{
+        height: 100vh;
+    }
+    
+    #about .about-image img{
+        height: 100%;
+        width: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+
+    #projetos{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: AUTO
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    body, li, a, p{
+        font-size: 15px;
+    }
+    
     #presentation img{
-        width: 500px;
+        width: 450px;
         border-radius: 8px;
     }
 
@@ -237,38 +292,66 @@ h2, h4 {
         margin-top: 10px;
     }
 
-    #presentation .column-content p{
-        margin-left: 100px;
-        margin-right: 100px;
+    #presentation .column-content{
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    #presentation .column-content p {
+        margin-right: 25px;
+        margin-left: 0;
+        text-align: justify;
     }
 
-    #presentation h1, #presentation p, #presentation a{
-        text-align: center;
+    #about{
+        height: 100vh;
+        line-height: 1.2;
+    }
+    
+    #about .about-image img{
+        max-height: 80%;
+        
+        padding-top: 0px;
+        padding-bottom: 0px
     }
 }
 
-@media (min-width: 1200px){   
-    #presentation, #about, #projetos, #contato {
-        padding-top: 15px;
-    }
-
-    /* Apresentação */
-    #presentation img{
-        width: 600px;
-        border-radius: 8px;
-    }
-
-    #presentation .column-image{
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    #presentation .column-content, #presentation .column-content p{
-        font-size: 25px;
-        margin: 0;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    
+    #presentation .column-content{
         align-items: flex-start;
+        justify-content: center;
+    }
+    
+    #presentation .column-content p {
+        margin-right: 25px;
+        margin-left: 0;
         text-align: justify;
+    }
+
+    #about{
+        height: 100vh;
+    }
+    
+    #about .about-image img{
+        max-height: 80%;
+        
+        padding-top: 0px;
+        padding-bottom: 0px
+    }
+}
+
+@media screen and (min-width: 1400px){
+    #presentation img{
+        width: 800px;
+    }
+    
+    #about .about-image img{
+        max-height: 100%;
+        
+        padding-top: 0px;
+        padding-bottom: 0px
     }
 }
 
