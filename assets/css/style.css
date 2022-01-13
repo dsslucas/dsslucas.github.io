@@ -2,7 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    font-family: 'Island Moments', cursive;
+    font-family: 'Oswald', sans-serif;
+
 
 }
 
@@ -21,8 +22,10 @@ header{
 }
 
 /* Configurações individuais de cada Landing Page */
-#presentation{
+#presentation, #contato, #presentation p a i{
     background-image: url('/assets/img/wallpaper.jpg');
+    color: white
+
 }
 
 #presentation img{
@@ -41,20 +44,18 @@ header{
     align-items: center;
 }
 
-#presentation .column-content{
-    /*
-    justify-content: center;
-    text-align: justify;
-    padding-right: 25px;
-    */
 
-}
-
-#presentation .contact-info a{
+#presentation .contact-info a, #contato p i{
     font-size: 30px;
-    color: black;
+    color: white;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+#presentation i:hover, #contato i:hover{
+
+    color: #00BCEF
+
 } 
 
 #about{
@@ -93,8 +94,7 @@ h2, h4 {
 /* Tela de Projetos */
 #projetos{
     background-color: tomato;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
 }
 
 #projetos .col {
@@ -104,14 +104,16 @@ h2, h4 {
     align-items: center;
 }
 
-#projetos .card{
+#projetos a {
     margin-top: 5px;
-
-    
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#contato{
-    background-color: green;
+#projetos .card:hover{
+    background: #F4F4F4;
+    box-shadow: 5px 5px #00BCEF;
 }
 
 /* Botão de retorno para a página inicial */
@@ -126,8 +128,13 @@ h2, h4 {
     color: black;
 }
 
+#return:hover{
+    background-color: #00BCEF
+}
+
+
 /* Landing Page, exceto Projetos que precisará de mais scroll*/
-#presentation, #about, #contato {
+#presentation, #about {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 100vh;
@@ -143,7 +150,7 @@ h2, h4 {
     text-align: center;
 }
 
-#about, #projetos, #contato {
+#about, #projetos {
     background: #DCDCDC
 }
 
@@ -314,6 +321,10 @@ h2, h4 {
         padding-top: 0px;
         padding-bottom: 0px
     }
+
+    #projetos{
+        height: 100vh;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -340,6 +351,8 @@ h2, h4 {
         padding-top: 0px;
         padding-bottom: 0px
     }
+
+
 }
 
 @media screen and (min-width: 1400px){
@@ -353,12 +366,8 @@ h2, h4 {
         padding-top: 0px;
         padding-bottom: 0px
     }
-}
 
-.teste1{
-    background: #fff;
-}
-
-.teste2{
-    background: #eee;
+    #projetos{
+        height: 100vh;
+    }
 }
