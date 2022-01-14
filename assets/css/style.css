@@ -92,10 +92,6 @@ h2, h4 {
 }
 
 /* Tela de Projetos */
-#projetos{
-    background-color: tomato;
-
-}
 
 #projetos .col {
     display: flex;
@@ -148,10 +144,15 @@ h2, h4 {
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
-#about, #projetos {
+#about, #projetos, #line {
     background: #DCDCDC
+}
+
+hr{
+    color: #007CA1
 }
 
 /* XS Grid System */
