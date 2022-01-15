@@ -195,8 +195,8 @@ hr{
         height: 100%;
         width: 250px;
         */
-        max-height: fit-content;
-        max-width: 250px;
+        max-width: fit-content;
+
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -317,8 +317,8 @@ hr{
     }
     
     #about .about-image img{
-        max-height: 80%;
-        
+        max-height: 100%;
+        max-width: max-content;
         padding-top: 0px;
         padding-bottom: 0px
     }
@@ -346,12 +346,14 @@ hr{
         height: 100vh;
     }
     
+    /*
     #about .about-image img{
-        max-height: 80%;
-        
+        max-height: 100%;
+        max-width: max-content;
         padding-top: 0px;
         padding-bottom: 0px
     }
+    */
 
 
 }
@@ -363,7 +365,6 @@ hr{
     
     #about .about-image img{
         max-height: 100%;
-        
         padding-top: 0px;
         padding-bottom: 0px
     }
