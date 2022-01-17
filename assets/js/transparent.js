@@ -35,7 +35,7 @@ window.addEventListener('scroll', function () {
     buttonOptions.classList.remove("show")
     
     //Contempla apenas a página inicial
-    if (window.pageYOffset < 550) {
+    if (window.pageYOffset < 520) {
         console.log("Na cor Dark")
         nav.classList.add('navbar-dark');
         nav.classList.remove("navbar-light")
