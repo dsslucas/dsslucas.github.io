@@ -8,7 +8,6 @@ const buttonOptions = document.getElementById('navbarTogglerDemo02')
 var buttonReturn = document.getElementById("return")
 
 window.addEventListener('load', function (){
-    console.log("Carreguei!")
     nav.classList.add('navbar-dark')
 
     buttonReturn.style.display = "none"
@@ -18,32 +17,27 @@ window.addEventListener('load', function (){
         nav.classList.add('navbar-light')
         buttonReturn.style.display = "inline"
     }
-
-    console.log(window)
 })
 
-
 buttonCollapse.addEventListener("click", function (){
-    console.log("Cliquei no botão")
     buttonOptions.style.display = "show"
 })
 
 window.addEventListener('scroll', function () {
-    console.log("Estou scrollando")
 
     //Remove o show do Nav
+    buttonCollapse.classList.add('collapsed')
+    buttonCollapse.ariaExpanded = false
     buttonOptions.classList.remove("show")
     
     //Contempla apenas a página inicial
     if (window.pageYOffset < 520) {
-        console.log("Na cor Dark")
         nav.classList.add('navbar-dark');
         nav.classList.remove("navbar-light")
         buttonReturn.style.display = "none"
     }
 
     else{
-        console.log("Saí da página inicial")
         nav.classList.remove("navbar-dark")
         nav.classList.add("navbar-light")
         buttonReturn.style.display = "inline"
