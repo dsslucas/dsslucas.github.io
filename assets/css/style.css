@@ -2,10 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    
     font-family: 'Oswald', serif
-    
-
 }
 
 /* Tudo do Header */
@@ -25,7 +22,8 @@ header{
 /* Configurações individuais de cada Landing Page */
 #presentation, #contato, #presentation p a i{
     background-image: url('/assets/img/wallpaper.jpg');
-    color: white
+    color: white;
+
 
 }
 
@@ -352,6 +350,7 @@ hr{
 }
 
 @media screen and (min-width: 1400px){
+    
     #presentation img{
         width: 800px;
     }
