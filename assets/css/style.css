@@ -2,8 +2,9 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    font-family: 'Oswald';
-
+    
+    font-family: 'Oswald', serif
+    
 
 }
 
