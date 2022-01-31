@@ -21,7 +21,7 @@ header{
 
 /* Configurações individuais de cada Landing Page */
 #presentation, #contato, #presentation p a i{
-    background-image: url('/assets/img/wallpaper.jpg');
+    background-image: url('/assets/img/other/wallpaper.jpg');
     color: white;
 
 
@@ -97,6 +97,7 @@ h2, h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3px;
 }
 
 #projetos a {
@@ -109,6 +110,10 @@ h2, h4 {
 #projetos .card:hover{
     background: #F4F4F4;
     box-shadow: 5px 5px #00BCEF;
+}
+
+#projetos .col:hover{
+    padding-bottom: 5px;
 }
 
 /* Botão de retorno para a página inicial */
@@ -322,9 +327,6 @@ hr{
         padding-bottom: 0px
     }
 
-    #projetos{
-        height: 100vh;
-    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
