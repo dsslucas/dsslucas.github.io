@@ -21,9 +21,19 @@ window.addEventListener('load', function (){
 
 buttonCollapse.addEventListener("click", function (){
     buttonOptions.style.display = "show"
+    if(window.pageYOffset < 520){
+        nav.classList.add('bg-dark')
+    }
+    else{
+        nav.classList.add('bg-light')
+    }
 })
 
 window.addEventListener('scroll', function () {
+
+    //Remove o fundo, que é criado quando há o clique no Nav
+    nav.classList.remove('bg-light')
+    nav.classList.remove('bg-dark')
 
     //Remove o show do Nav
     buttonCollapse.classList.add('collapsed')
