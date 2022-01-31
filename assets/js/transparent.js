@@ -29,7 +29,6 @@ buttonCollapse.addEventListener("click", function () {
     }
 
     if (buttonCollapse.classList.contains('collapsed')) {
-        console.log("Entrei na condição")
 
         buttonOptions.classList.add('collapsing')
         //Remove o fundo, que é criado quando há o clique no Nav
