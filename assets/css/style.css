@@ -1,87 +1,88 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     font-family: 'Oswald', serif
 }
 
+/* Bandeiras */
+li a .flag {
+    width: 22px;
+}
+
 /* Tudo do Header */
-header{
+header {
     position: absolute;
 }
 
-#navbarTogglerDemo02 ul li a{
+#navbarTogglerDemo02 ul li a {
     font-size: 18px;
 }
 
-.nav-item{
+.nav-item {
     display: flex;
     justify-content: flex-end;
 }
 
 /* Configurações individuais de cada Landing Page */
-#presentation, #contato, #presentation p a i{
+#presentation,
+#contato,
+#presentation p a i {
     background-image: url('/assets/img/other/wallpaper.jpg');
     color: white;
-
-
 }
 
-#presentation img{
+#presentation img {
     width: 550px;
     border-radius: 8px;
 }
 
-#presentation .column-image, #presentation .column-content{
+#presentation .column-image,
+#presentation .column-content {
     display: flex;
     flex-direction: column;
-    
 }
 
-#presentation .column-image{
+#presentation .column-image {
     justify-content: center;
     align-items: center;
 }
 
-
-#presentation .contact-info a, #contato p i{
+#presentation .contact-info a,
+#contato p i {
     font-size: 30px;
     color: white;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-#presentation i:hover, #contato i:hover{
-
+#presentation i:hover,
+#contato i:hover {
     color: #00BCEF
+}
 
-} 
-
-#about{
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#about img{
-
+#about img {
     height: 560px;
     width: 360px;
-
     border-radius: 8px;
 }
 
-#about .about-image{
+#about .about-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#about .row .about-content{
+#about .row .about-content {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     text-align: start;
 }
@@ -90,7 +91,8 @@ header{
     color: #212529
 }
 
-h2, h4 {
+h2,
+h4 {
     text-align: start;
 }
 
@@ -111,17 +113,17 @@ h2, h4 {
     cursor: pointer;
 }
 
-#projetos .card:hover{
+#projetos .card:hover {
     background: #F4F4F4;
     box-shadow: 5px 5px #00BCEF;
 }
 
-#projetos .col-xs:hover{
+#projetos .col-xs:hover {
     padding-bottom: 6px;
 }
 
 /* Botão de retorno para a página inicial */
-#return{
+#return {
     background: gray;
     position: fixed;
     bottom: 0;
@@ -132,243 +134,256 @@ h2, h4 {
     color: black;
 }
 
-#return:hover{
+#return:hover {
     background-color: #00BCEF
 }
 
-
 /* Landing Page, exceto Projetos que precisará de mais scroll*/
-#presentation, #about {
+#presentation,
+#about {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 100vh;
-
 }
 
-#presentation, #about, #projetos, #contato {
-
+#presentation,
+#about,
+#projetos,
+#contato {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
-#about, #projetos, #line {
+#about,
+#projetos,
+#line {
     background: #DCDCDC
 }
 
-hr{
+hr {
     color: #007CA1
 }
 
 /* XS Grid System */
-@media only screen and (max-width: 600px){
-    
-    #presentation, #about, #projetos, #contato {
+@media only screen and (max-width: 600px) {
+    #presentation,
+    #about,
+    #projetos,
+    #contato {
         padding-top: 12px;
     }
 
     /* Do NAV */
-    .nav-item{
+    .nav-item {
         padding-right: 10px;
     }
 
-
     /* Apresentação */
-    #presentation img{
+    #presentation img {
         width: 280px;
         border-radius: 8px;
     }
 
-    #presentation .column-content, #presentation .column-image{
+    #presentation .column-content,
+    #presentation .column-image {
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-top: 10px;
     }
 
-    #presentation .column-content p{
+    #presentation .column-content p {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    #about{
+    #about {
         height: auto;
     }
-    
-    #about img{
-        /*
-        height: 100%;
-        width: 250px;
-        */
-        
-        max-width: fit-content;
 
+    #about img {
+        max-width: fit-content;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    #projetos{
-
+    #projetos {
         padding-bottom: 5px;
+    }
+
+    /* Listas de habilidades. Precisei fazer uma renderização condicional por tela */
+
+    #list-mobile {
+        display: flex;
+    }
+
+    #list-large {
+        display: none
     }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-    
-    #presentation, #about, #projetos, #contato {
+@media only screen and (min-width: 600px) {
+    #presentation,
+    #about,
+    #projetos,
+    #contato {
         padding-top: 12px;
     }
 
     /* Do NAV */
-    .nav-item{
+    .nav-item {
         padding-right: 10px;
     }
 
     /* Apresentação */
-    #presentation img{
+    #presentation img {
         width: 550px;
         border-radius: 8px;
     }
 
-    #presentation .column-content, #presentation .column-image{
+    #presentation .column-content,
+    #presentation .column-image {
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-top: 10px;
     }
 
-    #presentation .column-content p{
+    #presentation .column-content p {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25px;
     }
-    
-    #about .about-image img{
-        /*
-        max-height: max-content;
-        max-width: max-content;
-
-        padding-top: 10px;
-        padding-bottom: 10px;
-        */
-
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px){
-    #presentation img{
+@media only screen and (min-width: 768px) {
+    #presentation img {
         width: 450px;
         border-radius: 8px;
     }
 
-    #presentation .column-content, #presentation .column-image{
+    #presentation .column-content,
+    #presentation .column-image {
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-top: 10px;
     }
 
-    #about{
+    #about {
         height: 100vh;
     }
-    
-    #about .about-image img{
+
+    #about .about-image img {
         height: 100%;
         max-width: max-content;
         padding-top: 10px;
         padding-bottom: 10px
     }
 
-    #projetos{
+    #projetos {
         padding-top: 10px;
         padding-bottom: 10px;
         height: AUTO
     }
+
+    /* Listas de habilidades. Precisei fazer uma renderização condicional por tela */
+
+    #list-mobile {
+        display: none;
+    }
+
+    #list-large {
+        display: flex
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
-    body, li, a, p{
+@media only screen and (min-width: 992px) {
+    body,
+    li,
+    a,
+    p {
         font-size: 15px;
     }
-    
-    #presentation img{
+
+    #presentation img {
         width: 450px;
         border-radius: 8px;
     }
 
-    #presentation .column-content, #presentation .column-image{
+    #presentation .column-content,
+    #presentation .column-image {
         align-items: center;
         justify-content: center;
         margin-top: 10px;
     }
 
-    #presentation .column-content{
+    #presentation .column-content {
         align-items: flex-start;
         justify-content: center;
     }
-    
+
     #presentation .column-content p {
         margin-right: 25px;
         margin-left: 0;
         text-align: justify;
     }
 
-    #about{
+    #about {
         height: 100vh;
         line-height: 1.2;
     }
-    
-    #about .about-image img{
+
+    #about .about-image img {
         max-width: max-content;
         max-height: 80vh;
         padding-top: 0px;
         padding-bottom: 0px
     }
 
+    .fixed-top {
+        padding-top: 1.5rem;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px){
-    
-    #presentation .column-content{
+@media only screen and (min-width: 1200px) {
+    #presentation .column-content {
         align-items: flex-start;
         justify-content: center;
     }
-    
+
     #presentation .column-content p {
         margin-right: 25px;
         margin-left: 0;
         text-align: justify;
     }
 
-    #about{
+    #about {
         height: 100vh;
     }
-    
-
-
 }
 
-@media screen and (min-width: 1400px){
-    
-    #presentation img{
+@media screen and (min-width: 1400px) {
+    #presentation img {
         width: 800px;
     }
-    
-    #about .about-image img{
+
+    #about .about-image img {
         max-height: 100%;
         padding-top: 0px;
         padding-bottom: 0px
     }
 
-    #projetos{
+    #projetos {
         height: 100vh;
     }
 }
