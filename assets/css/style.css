@@ -219,7 +219,7 @@ hr {
     }
 
     #about img {
-        max-width: fit-content;
+        width: auto;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -280,6 +280,11 @@ hr {
 @media only screen and (width: 540px) and (height: 720px) {
     #presentation img{
         width: 480px;
+    }
+
+    #about .about-image img {
+        min-width: 380px;
+        min-height: 100%;
     }
 }
 
