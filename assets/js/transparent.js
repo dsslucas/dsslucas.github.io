@@ -12,8 +12,6 @@ window.addEventListener('load', function () {
 
     buttonReturn.style.display = "none"
 
-    console.log(window)
-
     if (window.pageYOffset > 360) {
         nav.classList.remove('navbar-dark')
         nav.classList.add('navbar-light')
