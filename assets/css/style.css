@@ -30,6 +30,8 @@ header {
 #presentation p a i {
     background-image: url('/assets/img/other/wallpaper.jpg');
     color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 #presentation img {
@@ -168,7 +170,19 @@ hr {
 }
 
 /* XS Grid System */
+
+/* Adaptação para o Galaxy Fold */
+@media only screen and (max-width: 360px) {
+
+    /* Apresentação */
+    #presentation img {
+        max-width: 250px;
+        border-radius: 8px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+
     #presentation,
     #about,
     #projetos,
@@ -183,7 +197,7 @@ hr {
 
     /* Apresentação */
     #presentation img {
-        max-width: 290px;
+        width: 340px;
         border-radius: 8px;
     }
 
@@ -228,6 +242,7 @@ hr {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
     #presentation,
     #about,
     #projetos,
@@ -261,10 +276,17 @@ hr {
     }
 }
 
+/*Surface Duo */
+@media only screen and (width: 540px) and (height: 720px) {
+    #presentation img{
+        width: 480px;
+    }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #presentation img {
-        width: 450px;
+        width: 630px;
         border-radius: 8px;
     }
 
@@ -306,6 +328,7 @@ hr {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
     body,
     li,
     a,
@@ -323,6 +346,7 @@ hr {
         align-items: center;
         justify-content: center;
         margin-top: 10px;
+        
     }
 
     #presentation .column-content {
@@ -365,6 +389,11 @@ hr {
         margin-right: 25px;
         margin-left: 0;
         text-align: justify;
+    }
+
+    #presentation img {
+        width: 480px;
+        border-radius: 8px;
     }
 
     #about {
