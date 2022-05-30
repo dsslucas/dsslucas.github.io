@@ -183,7 +183,7 @@ hr {
 
     /* Apresentação */
     #presentation img {
-        width: 280px;
+        max-width: 290px;
         border-radius: 8px;
     }
 
