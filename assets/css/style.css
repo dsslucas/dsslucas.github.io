@@ -7,7 +7,7 @@ body {
 
 /* Bandeiras */
 li a .flag {
-    width: 22px;
+    max-width: 22px;
 }
 
 /* Tudo do Header */
