@@ -407,9 +407,6 @@ hr {
 }
 
 @media screen and (min-width: 1400px) {
-    * {
-        font-size: 1.4rem;
-    }
     
     #presentation img {
         width: 40rem;
