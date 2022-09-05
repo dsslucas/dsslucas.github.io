@@ -3,6 +3,7 @@ var nav = document.querySelector('nav');
 var li = document.getElementsByClassName("nav-item")
 var buttonCollapse = document.getElementById("botao-collapse")
 const buttonOptions = document.getElementById('navbarTogglerDemo02')
+const testMobile = document.getElementById('list-mobile')
 
 //Botão de retorno à página inicial
 var buttonReturn = document.getElementById("return")

@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    font-family: 'Oswald', serif
+    font-family: 'Oswald', serif;
 }
 
 /* Bandeiras */
@@ -35,7 +35,7 @@ header {
 }
 
 #presentation img {
-    width: auto;
+    width: 540px;
     border-radius: 8px;
 }
 
@@ -181,7 +181,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait){
 
     #presentation,
     #about,
@@ -274,6 +274,14 @@ hr {
         margin-right: 50px;
         font-size: 25px;
     }
+
+    #list-mobile {
+        display: flex;
+    }
+
+    #list-large {
+        display: none
+    }
 }
 
 /*Surface Duo */
@@ -289,9 +297,9 @@ hr {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation: landscape){
     #presentation img {
-        width: 630px;
+
         border-radius: 8px;
     }
 
@@ -424,15 +432,15 @@ hr {
 }
 
 /* Mobiles on landscape */
-@media only screen and (min-width: 600px) and (orientation: landscape){
+@media only screen and (max-width: 920px) and (orientation: landscape){
     /* Coluna da Apresentação */
     .column-image {
         width: 45%
     }
 
     #presentation img {
-        width: calc(100vh - 70px);
         border-radius: 8px;
+        max-width: 290px
     }
 
 
