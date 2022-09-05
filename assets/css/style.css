@@ -35,7 +35,7 @@ header {
 }
 
 #presentation img {
-    width: 550px;
+    width: auto;
     border-radius: 8px;
 }
 
@@ -420,5 +420,32 @@ hr {
 
     #projetos {
         height: 100vh;
+    }
+}
+
+/* Mobiles on landscape */
+@media only screen and (min-width: 600px) and (orientation: landscape){
+    /* Coluna da Apresentação */
+    .column-image {
+        width: 45%
+    }
+
+    #presentation img {
+        width: calc(100vh - 70px);
+        border-radius: 8px;
+    }
+
+
+    #about .about-image {
+        display: none
+    }
+
+    #about {
+        overflow: scroll;
+        height: auto;
+    }
+
+    #projetos .col-xs {
+        width: 50%;
     }
 }
