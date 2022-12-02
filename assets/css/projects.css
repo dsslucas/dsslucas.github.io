@@ -1,0 +1,59 @@
+#projetos .col-xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+#projetos a {
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#projetos .card:hover {
+    background: #F4F4F4;
+    box-shadow: 5px 5px #00BCEF;
+}
+
+#projetos .col-xs:hover {
+    padding-bottom: 6px;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    #projetos {
+        padding-top: 12px;
+        padding-bottom: 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #projetos {
+        padding-top: 12px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (orientation: landscape){
+    #projetos {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: AUTO
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #projetos {
+        min-height: 100vh;
+    }
+}
+
+/* Mobiles on landscape */
+@media only screen and (max-width: 920px) and (orientation: landscape){
+    #projetos .col-xs {
+        width: 50%;
+    }
+}

@@ -1,0 +1,135 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about img {
+    height: 560px;
+    width: 360px;
+    border-radius: 8px;
+}
+
+#about .about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .row .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+#about li a {
+    color: #212529
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    #about {
+        padding-top: 12px;
+        height: auto;
+    }
+
+    #about img {
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #list-mobile {
+        display: flex;
+    }
+
+    #list-large {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #about {
+        padding-top: 12px;
+    }
+
+    #list-mobile {
+        display: flex;
+    }
+
+    #list-large {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape){
+    #about {
+        height: 100vh;
+    }
+
+    #about .about-image img {
+        height: 100%;
+        max-width: max-content;
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+
+    #list-mobile {
+        display: none;
+    }
+
+    #list-large {
+        display: flex
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #about {
+        height: 100vh;
+        line-height: 1.2;
+    }
+
+    #about .about-image img {
+        max-width: max-content;
+        max-height: 80vh;
+        padding-top: 0px;
+        padding-bottom: 0px
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #about {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #about .about-image img {
+        max-height: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px
+    }
+}
+
+/* Mobiles on landscape */
+@media only screen and (max-width: 920px) and (orientation: landscape){
+    #about .about-image {
+        display: none
+    }
+
+    #about {
+        overflow: scroll;
+        height: auto;
+    }
+}
+
+/*Surface Duo */
+@media only screen and (width: 540px) and (height: 720px) {
+    #about .about-image img {
+        min-width: 380px;
+        min-height: 100%;
+    }
+}

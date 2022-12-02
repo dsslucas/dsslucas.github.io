@@ -1,0 +1,171 @@
+#presentation img {
+    width: 540px;
+    border-radius: 8px;
+}
+
+#presentation .column-image,
+#presentation .column-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation .column-image {
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation .contact-info a,
+#contato p i {
+    font-size: 30px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#presentation i:hover,
+#contato i:hover {
+    color: #00BCEF
+}
+
+/* Adaptação para o Galaxy Fold */
+@media only screen and (max-width: 360px) {
+    /* Apresentação */
+    #presentation img {
+        max-width: 250px;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    #presentation {
+        padding-top: 12px;
+    }
+
+    /* Apresentação */
+    #presentation img {
+        width: 340px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content,
+    #presentation .column-image {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #presentation .column-content p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #presentation {
+        padding-top: 12px;
+    }
+
+    /* Apresentação */
+    #presentation img {
+        width: 550px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content,
+    #presentation .column-image {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #presentation .column-content p {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (orientation: landscape){
+    #presentation img {
+        border-radius: 8px;
+    }
+
+    #presentation .column-content,
+    #presentation .column-image {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #presentation img {
+        width: 450px;
+        border-radius: 8px;
+    }
+
+    #presentation .column-content,
+    #presentation .column-image {
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+
+    #presentation .column-content {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #presentation .column-content p {
+        margin-right: 25px;
+        margin-left: 0;
+        text-align: justify;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #presentation .column-content {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #presentation .column-content p {
+        margin-right: 25px;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    #presentation img {
+        width: 480px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #presentation img {
+        width: 40rem;
+    }
+}
+
+/*Surface Duo */
+@media only screen and (width: 540px) and (height: 720px) {
+    #presentation img{
+        width: 480px;
+    }
+}
+
+/* Mobiles on landscape */
+@media only screen and (max-width: 920px) and (orientation: landscape){
+    #presentation img {
+        border-radius: 8px;
+        max-width: 290px
+    }
+}

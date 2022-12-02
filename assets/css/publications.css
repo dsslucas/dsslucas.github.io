@@ -1,0 +1,54 @@
+#publicacoes .row {
+
+}
+
+#publicacoes .publicacoes-image{
+    width: 80%
+}
+
+#publicacoes .publicacoes-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#publicacoes h4{
+    text-align: center
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    #publicacoes {
+        min-height: 100vh
+    }
+
+    #publicacoes .container {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+
+    #publicacoes .publicacoes-content {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+}
+
+@media only screen and (min-width: 600px) and (orientation: portrait){
+    #publicacoes {
+        max-height: 100vh
+    }
+
+    #publicacoes .container {
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+
+    #publicacoes .publicacoes-image{
+        width: 70%
+    }
+
+    #publicacoes .publicacoes-content {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+}

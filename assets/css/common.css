@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Oswald', serif;
+}
+
+/* Bandeiras */
+li a .flag {
+    max-width: 22px;
+}
+
+/* Tudo do Header */
+header {
+    position: absolute;
+}
+
+h2,
+h4 {
+    text-align: start;
+}
+
+button {
+    background: #00BCEF;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    height: 40px;
+    width: 80px;
+    border: 1.5px solid
+}
+
+button:hover {
+    background: #0086AB
+}
+
+/* Lista de Itens */
+#navbarTogglerDemo02 ul li a {
+    font-size: 18px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    /* Do NAV */
+    .nav-item {
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-item {
+        padding-right: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body,
+    li,
+    a,
+    p {
+        font-size: 15px;
+    }
+    
+    .fixed-top {
+        padding-top: 1.5rem;
+    }
+}
+
+#about,
+#projetos,
+#line,
+#publicacoes
+{
+    background: #DCDCDC
+}
+
+hr {
+    color: #007CA1
+}
+
+#presentation,
+#contato,
+#presentation p a i {
+    background-image: url('/assets/img/other/wallpaper.jpg');
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Landing Page, exceto Projetos que precisará de mais scroll*/
+#presentation,
+#about,
+#publicacoes {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100vh;
+}
+
+#presentation,
+#about,
+#projetos,
+#contato,
+#publicacoes, #publications {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Botão de retorno para a página inicial */
+#return {
+    background: gray;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+#return a {
+    color: black;
+}
+
+#return:hover {
+    background-color: #00BCEF
+}
