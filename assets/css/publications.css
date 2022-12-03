@@ -1,12 +1,14 @@
-#publicacoes .row {
-
+#publicacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#publicacoes .publicacoes-image{
-    width: 80%
-}
+/* #publicacoes .publicacoes-image {
+    width: 40%
+} */
 
-#publicacoes .publicacoes-content{
+#publicacoes .publicacoes-content s{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,9 +19,18 @@
     text-align: center
 }
 
-@media only screen and (max-width: 600px) and (orientation: portrait){
+@media only screen and (max-width: 767px) and (orientation: portrait){
     #publicacoes {
-        min-height: 100vh
+        height: auto
+    }
+
+    #publicacoes .publicacoes-image-content{
+
+    }
+
+    #publicacoes .publicacoes-image {
+        width: 100%;
+        //height: 100%
     }
 
     #publicacoes .container {
@@ -33,7 +44,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (orientation: portrait){
+@media only screen and (min-width: 768px) and (orientation: portrait){
     #publicacoes {
         max-height: 100vh
     }
@@ -44,7 +55,8 @@
     }
 
     #publicacoes .publicacoes-image{
-        width: 70%
+        width: 70%;
+        height: 100%
     }
 
     #publicacoes .publicacoes-content {
@@ -52,3 +64,95 @@
         padding-bottom: 10px
     }
 }
+
+@media only screen and (min-width: 992px){
+    /* 
+    #publicacoes .container {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 100%
+    } */
+ 
+    #publicacoes .publicacoes-image {
+        width: 85%;
+        height: 100%
+    }
+
+    #publicacoes .publicacoes-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+/* Mobiles on landscape */
+@media only screen and (max-width: 655px) and (orientation: landscape){
+    #publicacoes {
+        height: auto
+    }
+
+    #publicacoes .publicacoes-image {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 960px) and (orientation: landscape){
+    #publicacoes {
+        min-height: 100vh;
+        overflow: scroll
+    }
+
+    #publicacoes .publicacoes-image, #publicacoes .col-sm-12 {
+        display: none
+    }
+}
+
+/* Tablets on Landscape */
+@media only screen and (max-width: 1200px) and (orientation: landscape){
+    #publicacoes .col-lg-12 {
+        width: 50%
+    }
+}
+
+/* @media only screen and (max-width: 920px) and (orientation: landscape){
+    #publicacoes {
+        min-height: 100vh;
+        overflow: scroll
+    }
+
+    #publicacoes .publicacoes-image {
+        display: none
+    }
+} */
+
+/* @media only screen and (min-width: 1200px) and (orientation: portrait){
+    #publicacoes {
+        background: red
+    }
+
+    #publicacoes .container {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 100%
+    }
+
+    #publicacoes .publicacoes-image {
+        /* width: 100%;
+        height: 100% 
+        display: none
+    }
+    
+
+    #publicacoes .publicacoes-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: yellow
+    }
+} */

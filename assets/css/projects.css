@@ -6,33 +6,89 @@
     padding-bottom: 3px;
 }
 
-#projetos a {
+#projetos .card-img-top {
+    height: 50%
+}
+
+#projetos .card-body {
+    //height: 50%
+}
+
+#projetos .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    //grid-auto-rows: ;
+    grid-gap: 10px;
+}
+
+#projetos button {
+    background: transparent;
+    border: 0;
+    width: 50px
+}
+
+#projetos button:hover {
+    color: #00BCEF
+}
+
+/* #projetos a {
     margin-top: 5px;
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
-#projetos .card:hover {
+/* #projetos .card:hover {
     background: #F4F4F4;
     box-shadow: 5px 5px #00BCEF;
-}
+} */
 
-#projetos .col-xs:hover {
+/* #projetos .col-xs:hover {
     padding-bottom: 6px;
-}
+} */
 
-@media only screen and (max-width: 600px) and (orientation: portrait){
+@media only screen and (max-width: 576px) and (orientation: portrait){
     #projetos {
         padding-top: 12px;
         padding-bottom: 5px;
     }
+
+    #projetos .col-xs {
+        /* max-height: 400px; */
+    }
+
+    #projetos .row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin: 2px
+    }
+}
+
+/* Mobiles on landscape */
+@media only screen and (max-width: 920px) and (orientation: landscape){
+    #projetos .col-xs {
+        width: 50%;
+        height: 370px
+    }
+
+    #projetos .row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 370px;
+        margin: 2px
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
     #projetos {
         padding-top: 12px;
+    }
+
+    #projetos .row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 2px
     }
 }
 
@@ -41,19 +97,22 @@
     #projetos {
         padding-top: 10px;
         padding-bottom: 10px;
-        height: AUTO
+        height: auto
+    }
+
+    #projetos .row {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        margin: 2px
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     #projetos {
         min-height: 100vh;
     }
-}
 
-/* Mobiles on landscape */
-@media only screen and (max-width: 920px) and (orientation: landscape){
-    #projetos .col-xs {
-        width: 50%;
+    #projetos .card-img-top {
+        height: 60%
     }
 }

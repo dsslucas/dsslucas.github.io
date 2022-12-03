@@ -113,6 +113,14 @@ hr {
     text-align: center;
 }
 
+#contato {
+    height: 50px;
+}
+
+#contato p {
+    margin-bottom: 0
+}
+
 /* Botão de retorno para a página inicial */
 #return {
     background: gray;
