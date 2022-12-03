@@ -10,14 +10,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/presentation.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/publications.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
@@ -49,11 +52,8 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
-
-
     </header>
 
     <section id="presentation">
@@ -69,8 +69,7 @@
                     <p class="contact-info">
                         <a href="https://www.linkedin.com/in/lucas-silva-souza/?locale=en_US" target="_blank"><i
                                 class="fa fa-linkedin fa-1x"></i></a>
-                        <a href="https://github.com/dsslucas" target="_blank"><i
-                                class="fa fa-github fa-1x"></i></a>
+                        <a href="https://github.com/dsslucas" target="_blank"><i class="fa fa-github fa-1x"></i></a>
                         <a href="mailto:lucasdasilvasou@gmail.com"><i class="fa fa-envelope"></i></a>
                     </p>
                 </div>
@@ -97,7 +96,7 @@
                             </ul>
                         </div>
                     </div>
- 
+
                     <div class="row" id="list-mobile">
                         <h5>Tecnologias</h5>
                         <div class="col col-xs-6">
@@ -108,22 +107,21 @@
                                 <li>TypeScript</li>
                                 <li>Python</li>
                                 <li>Go</li>
+                                <li>Node.js</li>
                             </ul>
                         </div>
                         <div class="col col-xs-6">
                             <ul>
-                                <li>Node.js</li>
                                 <li>React.js</li>
                                 <li>Angular.js</li>
                                 <li>Next.js</li>
+                                <li>React Native</li>
                                 <li>C</li>
                                 <li>SQL</li>
-
                             </ul>
                         </div>
+                    </div>
 
-                    </div>         
-                    
                     <div class="row" id="list-large">
                         <h5>Tecnologias</h5>
                         <div class="col col-md-4">
@@ -132,14 +130,16 @@
                                 <li>CSS3</li>
                                 <li>JavaScript</li>
                                 <li>TypeScript</li>
+                                <li>Node.js</li>
                             </ul>
                         </div>
                         <div class="col col-md-4">
                             <ul>
-                                <li>Node.js</li>
                                 <li>React.js</li>
                                 <li>Angular.js</li>
                                 <li>Next.js</li>
+                                <li>React Native</li>
+                                <li>Bootstrap</li>
                             </ul>
                         </div>
 
@@ -149,9 +149,10 @@
                                 <li>C</li>
                                 <li>Go</li>
                                 <li>SQL</li>
+                                <li>Git</li>
                             </ul>
                         </div>
-                    </div>               
+                    </div>
 
                     <div class="row">
                         <div class="col-12">
@@ -166,13 +167,16 @@
                             <h6>Researcher - Aug/2021 to Dec/2021</h6>
                             <ul>
                                 <li class="list-unstyled">University of Brasilia (UnB)</li>
-                                <li class="list-unstyled">Research project between UnB and the <a href="https://www.gov.br/cade/en">Administrative Council for Economic Defense (CADE)</a>.</li>
+                                <li class="list-unstyled">Research project between UnB and the <a
+                                        href="https://www.gov.br/cade/en">Administrative Council for Economic Defense
+                                        (CADE)</a>.</li>
                             </ul>
 
                             <h6>Teacher - Nov/2020 to May/2021</h6>
                             <ul>
                                 <li class="list-unstyled">State Department of Education of Federal District (SEEDF)</li>
-                                <li class="list-unstyled">Regency provided in the curriculum of the Degree in Computing on UnB, with a total workload of 180 hours.</li>
+                                <li class="list-unstyled">Regency provided in the curriculum of the Degree in Computing
+                                    on UnB, with a total workload of 180 hours.</li>
                             </ul>
 
                             <h6>Intern - Jul/2017 to Jun/2019</h6>
@@ -195,102 +199,246 @@
         </div>
     </section>
 
-    <section id="publications">
-
-    </section>
-
     <section id="projetos">
         <div class="container">
             <h2>Projects</span></h2>
+            <div class="row flex-row">
+
+                <div class="card">
+                    <img src="assets/img/project/task-reactnative.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">To-do Application</h5>
+                        <p class="card-text">First project in React Native, for learning purposes. Node.js, Redux and Postgres were also used.</p>
+                        <div style="display: flex; justify-content: center">
+                            <form
+                                action="https://github.com/dsslucas/estudos-react-native/tree/master/projeto-to-do-tasks"
+                                method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/mks.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Simulation</h5>
+                        <p class="card-text">Challenge proposed by MKS Sistemas that simulates an e-commerce, using React, Redux and Styled Components.</p>
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://desafio-loja-mks.vercel.app/" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/dsslucas/desafio-loja-mks" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="assets/img/project/CodeLeap.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CRUD Message System</h5>
+                        <p class="card-text">CodeLeap selective process which simulate messages, developed
+                            within React.js and integrated to back-end.</p>
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://project-frontend-codeleap.vercel.app/signup" method="get"
+                                target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/dsslucas/project-frontend-codeleap" method="get"
+                                target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/estudo-react-rocketseat.png" class="card-img-top img-thumbnail"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ignite Lab - Rocketseat</h5>
+                        <p class="card-text">Simulation of Rocketseat Event Platform, using React.js,
+                            TailwindCSS and GraphCMS.</p>
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://estudo-react-rocketseat.vercel.app/" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/dsslucas/estudo-react-rocketseat" method="get"
+                                target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/to-do.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lista de To-do</h5>
+                        <p class="card-text">Project developed with React, Redux, Node.js and MongoDB that performs CRUD requests on tasks.</p>
+
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://github.com/dsslucas/projeto-todo-list" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/controle-gastos.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Expense Control System</h5>
+                        <p class="card-text">React.js project, which does calculate the user' costs based on
+                            their money.</p>
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://contador-gastos.herokuapp.com/" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/dsslucas/contador-gastos" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/projeto_alura.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AluraCord</h5>
+                        <p class="card-text">Imersão ao React.js, projeto da Alura que consiste na simulação do chat
+                            do Discord, coletando dados do GitHub.</p>
+
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://imersao-react-alura-phi.vercel.app/" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/dsslucas/imersao-react-alura" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/rent-management.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rent Management</h5>
+                        <p class="card-text">Private project of a lease management system, made with React.js, Material UI, C# and Postgres.</p>
+                        <div style="display: flex; justify-content: center">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/portfolio-edna.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">Elaborated to Dra. Prof. Edna Dias Canedo, using HTML5, CSS3, Bootstrap and JavaScript.</p>
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://ednacanedo.github.io/" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/ednacanedo/ednacanedo.github.io" method="get"
+                                target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/project/iot-guide-full.png" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">IoT-Guide</h5>
+                        <p class="card-text">My Undergraduate Thesis, using HTML5, CSS3, Bootstrap and JavaScript.</p>
+
+                        <div style="display: flex; justify-content: center">
+                            <form action="https://dsslucas.github.io/iot-guide/sobre" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </button>
+                            </form>
+                            <form action="https://github.com/dsslucas/iot-guide" method="get" target="_blank">
+                                <button type="submit">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="line">
+        <div class="container">
+            <hr>
+        </div>
+    </section>
+
+    <section id="publicacoes">
+        <div class="container">
+            <h2>Publications</h2>
+
             <div class="row">
-
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="https://project-frontend-codeleap.vercel.app/signup" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/CodeLeap.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">CRUD Message System</h5>
-                                <p class="card-text">CodeLeap selective process which simulate messages, developed within React.js and integrated to back-end.</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="publicacoes-image-content col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <img src="assets/img/other/print article.jpg" alt="article" class="publicacoes-image">
                 </div>
 
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="https://estudo-react-rocketseat.vercel.app/" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/estudo-react-rocketseat.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Ignite Lab - Rocketseat</h5>
-                                <p class="card-text">Simulation of Rocketseat Event Platform, using React.js, TailwindCSS and GraphCMS.</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="publicacoes-content col-xs col-sm col-md col-lg col-xl">
+                    <h4>Requirements Engineering Processes in the Context of IoT and Requirements Validation Techniques
+                    </h4>
+                    <p>Article presented at WER 2022, based on the Course Completion Work (TCC on Brazil) that I carried out in partnership with Felipe Ayres and guided by Dr. Prof. Edna Dias Canedo, presented on August 9, 2021 at the University of Brasília (UnB).
+                    </p>
+                    <p>The article consists of a study in the literature on the processes and techniques of Requirements Engineering aimed at data validation in the context of the Internet of Things (IoT). Based on this, the IoT-Guide was proposed, with the aim of guiding academic and professional projects that adopt IoT and that need to legitimize these data.</p>
+
+                    <div style="display: flex; justify-content: center;">
+                        <form
+                            action="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER22/WER_2022_Camera_ready_paper_31.pdf"
+                            method="get" target="_blank">
+                            <button type="submit">Article</button>
+                        </form>
+                        <form action="https://bdm.unb.br/handle/10483/29066" method="get" target="_blank">
+                            <button type="submit">TCC</button>
+                        </form>
+                        <form action="https://dsslucas.github.io/iot-guide/sobre.html" method="get" target="_blank">
+                            <button type="submit">IoT-Guide</button>
+                        </form>
+                    </div>
                 </div>
-
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="https://contador-gastos.herokuapp.com/" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/controle-gastos.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Expense Control System</h5>
-                                <p class="card-text">React.js project, which does calculate the user' costs based on their money.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="https://imersao-react-alura-phi.vercel.app/" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/projeto_alura.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">AluraCord</h5>
-                                <p class="card-text">React.js Imersion, project elaborated by Alura.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/rent-management.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Rent Management</h5>
-                                <p class="card-text">Property rental management system, in integration with backend.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="https://ednacanedo.github.io/" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/portfolio-edna.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Portfolio</h5>
-                                <p class="card-text">Elaborated to Dra. Prof. Edna Dias Canedo.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs col-md-6 col-lg-4">
-                    <a href="https://dsslucas.github.io/iot-guide/about" target="_blank">
-                        <div class="card">
-                            <img src="assets/img/project/iot-guide-full.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">IoT-Guide</h5>
-                                <p class="card-text">My Undergraduate Thesis.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                
-
             </div>
         </div>
     </section>

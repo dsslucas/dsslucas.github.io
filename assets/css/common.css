@@ -7,7 +7,7 @@ body {
 
 /* Bandeiras */
 li a .flag {
-    max-width: 22px;
+    max-width: 1.375rem;
 }
 
 /* Tudo do Header */
@@ -22,12 +22,12 @@ h4 {
 
 button {
     background: #00BCEF;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 8px;
-    height: 40px;
-    width: 80px;
-    border: 1.5px solid
+    margin-left: 0.313rem;
+    margin-right: 0.313rem;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 5rem;
+    border: 0.094rem solid
 }
 
 button:hover {
@@ -36,7 +36,7 @@ button:hover {
 
 /* Lista de Itens */
 #navbarTogglerDemo02 ul li a {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .nav-item {
@@ -47,13 +47,13 @@ button:hover {
 @media only screen and (max-width: 600px) and (orientation: portrait){
     /* Do NAV */
     .nav-item {
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .nav-item {
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
 }
 
@@ -63,7 +63,7 @@ button:hover {
     li,
     a,
     p {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
     
     .fixed-top {
@@ -96,8 +96,8 @@ hr {
 #presentation,
 #about,
 #publicacoes {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.313rem;
+    padding-bottom: 0.313rem;
     height: 100vh;
 }
 
@@ -114,7 +114,7 @@ hr {
 }
 
 #contato {
-    height: 50px;
+    height: 3.125rem;
 }
 
 #contato p {
@@ -126,7 +126,7 @@ hr {
     background: gray;
     position: fixed;
     bottom: 0;
-    right: 5px;
+    right: 0.313rem;
 }
 
 #return a {

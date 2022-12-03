@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3px;
+    padding-bottom: 0.188rem;
 }
 
 #projetos .card-img-top {
@@ -17,41 +17,25 @@
 #projetos .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px;
+    grid-template-rows: 25rem;
     //grid-auto-rows: ;
-    grid-gap: 10px;
+    grid-gap: 0.625rem;
 }
 
 #projetos button {
     background: transparent;
     border: 0;
-    width: 50px
+    width: 3.125rem
 }
 
 #projetos button:hover {
     color: #00BCEF
 }
 
-/* #projetos a {
-    margin-top: 5px;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
-/* #projetos .card:hover {
-    background: #F4F4F4;
-    box-shadow: 5px 5px #00BCEF;
-} */
-
-/* #projetos .col-xs:hover {
-    padding-bottom: 6px;
-} */
-
 @media only screen and (max-width: 576px) and (orientation: portrait){
     #projetos {
-        padding-top: 12px;
-        padding-bottom: 5px;
+        padding-top: 0.75rem;
+        padding-bottom: 0.313rem;
     }
 
     #projetos .col-xs {
@@ -61,7 +45,7 @@
     #projetos .row {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-        margin: 2px
+        margin: 0.125rem
     }
 }
 
@@ -69,41 +53,41 @@
 @media only screen and (max-width: 920px) and (orientation: landscape){
     #projetos .col-xs {
         width: 50%;
-        height: 370px
+        height: 23.125rem
     }
 
     #projetos .row {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 370px;
-        margin: 2px
+        grid-template-rows: 23.125rem;
+        margin: 0.125rem
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
     #projetos {
-        padding-top: 12px;
+        padding-top: 0.75rem;
     }
 
     #projetos .row {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        margin: 2px
+        margin: 0.125rem
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (orientation: landscape){
     #projetos {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
         height: auto
     }
 
     #projetos .row {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        margin: 2px
+        margin: 0.125rem
     }
 }
 

@@ -1,6 +1,6 @@
 #presentation img {
-    width: 540px;
-    border-radius: 8px;
+    width: 33.75rem;
+    border-radius: 0.5rem;
 }
 
 #presentation .column-image,
@@ -16,10 +16,10 @@
 
 #presentation .contact-info a,
 #contato p i {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: white;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0.313rem;
+    margin-right: 0.313rem;
 }
 
 #presentation i:hover,
@@ -31,20 +31,16 @@
 @media only screen and (max-width: 360px) {
     /* Apresentação */
     #presentation img {
-        max-width: 250px;
-        border-radius: 8px;
+        max-width: 15.625rem;
+        border-radius: 0.5rem;
     }
 }
 
-@media only screen and (max-width: 600px) and (orientation: portrait){
-    #presentation {
-        padding-top: 12px;
-    }
-
+@media only screen and (max-width: 768px) and (orientation: portrait){
     /* Apresentação */
     #presentation img {
-        width: 340px;
-        border-radius: 8px;
+        width: 21.25rem;
+        border-radius: 0.5rem;
     }
 
     #presentation .column-content,
@@ -52,70 +48,42 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 0.625rem;
     }
 
     #presentation .column-content p {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #presentation {
-        padding-top: 12px;
-    }
-
-    /* Apresentação */
-    #presentation img {
-        width: 550px;
-        border-radius: 8px;
-    }
-
-    #presentation .column-content,
-    #presentation .column-image {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    #presentation .column-content p {
-        margin-left: 50px;
-        margin-right: 50px;
-        font-size: 25px;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (orientation: landscape){
+    /* Apresentação */
     #presentation img {
-        border-radius: 8px;
+        width: 550px;
+        border-radius: 0.5rem;
     }
-
-    #presentation .column-content,
-    #presentation .column-image {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 10px;
+    
+    #presentation .column-content p {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        font-size: 1.563rem;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #presentation img {
-        width: 450px;
-        border-radius: 8px;
+        width: 28.125rem;
+        border-radius: 0.5rem;
     }
 
     #presentation .column-content,
     #presentation .column-image {
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
-        
+        margin-top: 0.625rem;        
     }
 
     #presentation .column-content {
@@ -124,7 +92,7 @@
     }
 
     #presentation .column-content p {
-        margin-right: 25px;
+        margin-right: 1.563rem;
         margin-left: 0;
         text-align: justify;
     }
@@ -138,14 +106,14 @@
     }
 
     #presentation .column-content p {
-        margin-right: 25px;
+        margin-right: 1.563rem;
         margin-left: 0;
         text-align: justify;
     }
 
     #presentation img {
-        width: 480px;
-        border-radius: 8px;
+        width: 30rem;
+        border-radius: 0.5rem;
     }
 }
 
@@ -158,18 +126,22 @@
 /*Surface Duo */
 @media only screen and (width: 540px) and (height: 720px) {
     #presentation img{
-        width: 480px;
+        width: 30rem;
     }
 }
 
 /* Mobiles on landscape */
 @media only screen and (max-width: 960px) and (orientation: landscape){
     #presentation img {
-        border-radius: 8px;
-        max-width: 260px
+        border-radius: 0.5rem;
+        max-width: 16.25rem
     }
 
     #presentation .col {
         width: 50%
+    }
+
+    #presentation .column-content {
+        justify-content: center
     }
 }

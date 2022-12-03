@@ -6,9 +6,9 @@
 }
 
 #about img {
-    height: 560px;
-    width: 360px;
-    border-radius: 8px;
+    height: 35rem;
+    width: 22.5rem;
+    border-radius: 0.5rem;
 }
 
 #about .about-image {
@@ -30,14 +30,14 @@
 
 @media only screen and (max-width: 600px) and (orientation: portrait){
     #about {
-        padding-top: 12px;
+        padding-top: 0.75rem;
         height: auto;
     }
 
     #about img {
         width: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
     }
 
     #list-mobile {
@@ -51,7 +51,7 @@
 
 @media only screen and (min-width: 600px) {
     #about {
-        padding-top: 12px;
+        padding-top: 0.75rem;
     }
 
     #list-mobile {
@@ -71,8 +71,8 @@
     #about .about-image img {
         height: 100%;
         max-width: max-content;
-        padding-top: 10px;
-        padding-bottom: 10px
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem
     }
 
     #list-mobile {
@@ -129,7 +129,7 @@
 /*Surface Duo */
 @media only screen and (width: 540px) and (height: 720px) {
     #about .about-image img {
-        min-width: 380px;
-        min-height: 100%;
+        max-width: 23.75rem;
+        height: 100%;
     }
 }
