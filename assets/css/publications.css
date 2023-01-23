@@ -15,6 +15,38 @@
     text-align: center
 }
 
+#publicacoes .links-publicacao {
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+} 
+
+#publicacoes span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00BCEF;
+    margin-left: 0.313rem;
+    margin-right: 0.313rem;
+    border-radius: 0.5rem;
+    width: 5rem;
+    border: 0.094rem solid
+}
+
+#publicacoes span:hover {
+    background: #0086AB
+}
+
+#publicacoes span a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #000000
+}
+
 @media only screen and (max-width: 767px) and (orientation: portrait){
     #publicacoes {
         height: auto

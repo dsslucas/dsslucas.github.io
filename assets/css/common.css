@@ -34,6 +34,12 @@ button:hover {
     background: #0086AB
 }
 
+a {
+    color: #000000;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
 /* Lista de Itens */
 #navbarTogglerDemo02 ul li a {
     font-size: 1.125rem;
@@ -131,6 +137,7 @@ hr {
 
 #return a {
     color: black;
+    margin: 0
 }
 
 #return:hover {
