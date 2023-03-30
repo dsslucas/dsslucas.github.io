@@ -29,6 +29,7 @@
 
 /* Adaptação para o Galaxy Fold */
 @media only screen and (max-width: 360px) {
+
     /* Apresentação */
     #presentation img {
         max-width: 15.625rem;
@@ -36,7 +37,8 @@
     }
 }
 
-@media only screen and (max-width: 768px) and (orientation: portrait){
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+
     /* Apresentação */
     #presentation img {
         width: 21.25rem;
@@ -58,13 +60,14 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (orientation: landscape){
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+
     /* Apresentação */
     #presentation img {
         width: 550px;
         border-radius: 0.5rem;
     }
-    
+
     #presentation .column-content p {
         margin-left: 3.125rem;
         margin-right: 3.125rem;
@@ -83,7 +86,7 @@
     #presentation .column-image {
         align-items: center;
         justify-content: center;
-        margin-top: 0.625rem;        
+        margin-top: 0.625rem;
     }
 
     #presentation .column-content {
@@ -125,13 +128,13 @@
 
 /*Surface Duo */
 @media only screen and (width: 540px) and (height: 720px) {
-    #presentation img{
+    #presentation img {
         width: 30rem;
     }
 }
 
 /* Mobiles on landscape */
-@media only screen and (max-width: 960px) and (orientation: landscape){
+@media only screen and (max-width: 960px) and (orientation: landscape) {
     #presentation img {
         border-radius: 0.5rem;
         max-width: 16.25rem
