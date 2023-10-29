@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Souza</title>
+    <title>Lucas Souza | Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="assets/css/publications.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -58,19 +64,18 @@
 
     <section id="presentation">
         <div class="container">
-            <div class="row">
-                <div class="col col-xs-12 col-sm-12 col-lg-6 col-xl-6 column-image">
+            <div class="row" id="presentation_wrapper">
+                <div class="col col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-6 column-image">
                     <img src="assets/img/other/img-perfil-3.png" alt="photo_presentation">
                 </div>
-                <div class="col col-xs col-sm col-lg col-xl column-content">
+                <div class="col col-xs-12 col-sm-6 col-md-12 col-lg col-xl-6 column-content">
                     <h1 id="h1-presentation">Lucas Souza</h1>
-                    <p id="p-presentation">Fullstack Developer.</p>
-
+                    <p id="p-presentation">Desenvolvedor Fullstack</p>
                     <p class="contact-info">
-                        <a href="https://www.linkedin.com/in/lucas-silva-souza/?locale=en_US" target="_blank"><i
+                        <a href="https://www.linkedin.com/in/lucas-silva-souza/" target="_blank"><i
                                 class="fa fa-linkedin fa-1x"></i></a>
                         <a href="https://github.com/dsslucas" target="_blank"><i class="fa fa-github fa-1x"></i></a>
-                        <a href="mailto:lucasdasilvasou@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a href="mailto:lucasdasilvasou@gmail.com"><i class="fa fa-envelope fa-1x"></i></a>
                     </p>
                 </div>
             </div>
@@ -79,125 +84,79 @@
 
     <section id="about">
         <div class="container">
-            <h2>About</h2>
-            <div class="row">
-                <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 about-image">
+            <header>
+                <h2>About</h2>
+            </header>
+
+            <section class="row" id="section_about_content">
+                <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 col-xl-3 col-xxl-3" id="column_image_wrapper">
                     <img src="assets/img/other/img-about.jpg" alt="image_about" srcset="">
                 </div>
-                <div class="col col-xs col-sm col-md col-lg col-xl-8 about-content">
-                    <div class="row row-formation">
-                        <div class="col-12">
-                            <h5>Educational Formation</h5>
-                            <h6>University of Brasilia (UnB) - Mar/2016 to May/2022</h6>
-                            <ul>
-                                <li class="list-unstyled">
-                                    <p>Degree in Computing.</p>
-                                </li>
-                            </ul>
+
+                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 col-xl-9 col-xxl-9 about-content"
+                    id="column_content_wrapper">
+                    <div class="row" id="columns_content_about_wrapper">
+                        <script src="assets/js/About.js"></script>
+
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-7"
+                            id="column_content_infos">
+                            <div class="row" id="column_education_info">
+
+                                <h3>
+                                    <script type="text/javascript">
+                                        renderEducationTitle("title", "en_US")
+                                    </script>
+                                </h3>
+                                <h6>
+                                    <script type="text/javascript">
+                                        renderEducationCollegeName("college", "en_US")
+                                    </script>
+                                </h6>
+                                <p>
+                                    <script type="text/javascript">
+                                        renderEducationDescription("description", "en_US")
+                                    </script>
+                                </p>
+                            </div>
+                            <div class="row" id="column_professional_experiences">
+                                <h3>
+                                    <script type="text/javascript">
+                                        renderProfessionalExperiencesTitle("professionalExperiences", "en_US")
+                                    </script>
+                                </h3>
+
+                                <div class="row" id="list_professional_experiences">
+                                    <div id="list_professional_experiences_wrapper">
+                                        <script src="assets/js/ListProfessionalExperiences.js"></script>
+                                        <script type="text/javascript">
+                                            renderProfessionalExperiences("en_US")
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-5"
+                            id="column_content_technologies">
+                            <h3>
+                                <script type="text/javascript">
+                                    renderTechnologyTitle("technologies", "en_US")
+                                </script>
+                            </h3>
+
+                            <div id="skills_wrapper">
+                                <script src="assets/js/ListSoftSkills.js"></script>
+                                <script type="text/javascript">
+                                    renderSkills("en_US")
+                                </script>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row" id="list-mobile">
-                        <h5>Tecnologias</h5>
-                        <div class="col col-xs-6">
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>Python</li>
-                                <li>Go</li>
-                                <li>Node.js</li>
-                            </ul>
-                        </div>
-                        <div class="col col-xs-6">
-                            <ul>
-                                <li>React.js</li>
-                                <li>Angular.js</li>
-                                <li>Next.js</li>
-                                <li>React Native</li>
-                                <li>C</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row" id="list-large">
-                        <h5>Tecnologias</h5>
-                        <div class="col col-md-4">
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>Node.js</li>
-                            </ul>
-                        </div>
-                        <div class="col col-md-4">
-                            <ul>
-                                <li>React.js</li>
-                                <li>Angular.js</li>
-                                <li>Next.js</li>
-                                <li>React Native</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-
-                        <div class="col col-md-4">
-                            <ul>
-                                <li>Python</li>
-                                <li>C</li>
-                                <li>Go</li>
-                                <li>SQL</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Professional Experiences</h5>
-
-                            <h6>Fullstack Developer- Feb/2023 until now
-                            </h6>
-                            <ul>
-                                <li class="list-unstyled">DBFactory Informática LTDA</li>
-                                <li class="list-unstyled">Creating and maintaining web software in React.js, Node.js, Angular.js. Ant Design and Bootstrap.</li>
-                            </ul>
-
-                            <h6>Frontend Developer - Jun/2022 to Aug/2022</h6>
-                            <ul>
-                                <li class="list-unstyled">Zehta Technology and Communication</li>
-                                <li class="list-unstyled">Development using React.js.</li>
-                            </ul>
-
-                            <h6>Researcher - Aug/2021 to Dec/2021</h6>
-                            <ul>
-                                <li class="list-unstyled">University of Brasilia (UnB)</li>
-                                <li class="list-unstyled">Research project between UnB and the <a
-                                        href="https://www.gov.br/cade/en">Administrative Council for Economic Defense
-                                        (CADE)</a>.</li>
-                            </ul>
-
-                            <h6>Teacher - Nov/2020 to May/2021</h6>
-                            <ul>
-                                <li class="list-unstyled">State Department of Education of Federal District (SEEDF)</li>
-                                <li class="list-unstyled">Regency provided in the curriculum of the Degree in Computing
-                                    on UnB, with a total workload of 180 hours.</li>
-                            </ul>
-
-                            <h6>Intern - Jul/2017 to Jun/2019</h6>
-                            <ul>
-                                <li class="list-unstyled">School of the Nations</li>
-                                <li class="list-unstyled">User support by Help Desk platforms.</li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+            </section>
         </div>
-
+        </div>
     </section>
 
     <section id="line">
@@ -208,214 +167,16 @@
 
     <section id="projetos">
         <div class="container">
-            <h2>Projects</span></h2>
-            <div class="row flex-row">
+            <header>
+                <h2>Projects</h2>
+            </header>
 
-                <div class="card">
-                    <img src="assets/img/project/marama.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Marama Lingerie E-commerce</h5>
-                        <p class="card-text">First fullstack project aimed at serving Marama Lingerie's e-commerce. React.js, Node.js and Postgres were used.</p>
-                        <div>
-                            <span>
-                                <a href="https://github.com/dsslucas/projeto-ecommerce" target="_blank">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/task-reactnative.jpg" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">To-do Application</h5>
-                        <p class="card-text">First project in React Native, for learning purposes. Node.js, Redux and Postgres were also used.</p>
-                        <div>
-                            <span>
-                                <a href="https://github.com/dsslucas/estudos-react-native/tree/master/projeto-to-do-tasks"
-                                    target="_blank">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/mks.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">E-commerce Simulation</h5>
-                        <p class="card-text">Challenge proposed by MKS Sistemas that simulates an e-commerce, using React, Redux and Styled Components.</p>
-                        <div style="display: flex; justify-content: center">
-                            <span>
-                                <a href="https://desafio-loja-mks.vercel.app/" target="_blank">
-                                    <i class="fa fa-globe fa-2x"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://github.com/dsslucas/desafio-loja-mks" target="_blank">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/CodeLeap.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CRUD Message System</h5>
-                        <p class="card-text">CodeLeap selective process which simulate messages, developed
-                            within React.js and integrated to back-end.</p>
-                            <div style="display: flex; justify-content: center">
-                                <span>
-                                    <a href="https://project-frontend-codeleap.vercel.app/signup" target="_blank">
-                                        <i class="fa fa-globe fa-2x"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a href="https://github.com/dsslucas/project-frontend-codeleap" target="_blank">
-                                        <i class="fa fa-github fa-2x"></i>
-                                    </a>
-                                </span>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/estudo-react-rocketseat.png" class="card-img-top img-thumbnail"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ignite Lab - Rocketseat</h5>
-                        <p class="card-text">Simulation of Rocketseat Event Platform, using React.js,
-                            TailwindCSS and GraphCMS.</p>
-                            <div style="display: flex; justify-content: center">
-                                <span>
-                                    <a href="https://estudo-react-rocketseat.vercel.app/" target="_blank">
-                                        <i class="fa fa-globe fa-2x"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a href="https://github.com/dsslucas/estudo-react-rocketseat" target="_blank">
-                                        <i class="fa fa-github fa-2x"></i>
-                                    </a>
-                                </span>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/to-do.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">To-do List</h5>
-                        <p class="card-text">Project developed with React, Redux, Node.js and MongoDB that performs CRUD requests on tasks.</p>
-
-                        <div style="display: flex; justify-content: center">
-                            <span>
-                                <a href="https://github.com/dsslucas/projeto-todo-list" target="_blank">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/controle-gastos.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Expense Control System</h5>
-                        <p class="card-text">React.js project, which does calculate the user' costs based on
-                            their money.</p>
-                            <div style="display: flex; justify-content: center">
-                                <span>
-                                    <a href="https://contador-gastos.herokuapp.com/" target="_blank">
-                                        <i class="fa fa-globe fa-2x"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a href="https://github.com/dsslucas/contador-gastos" target="_blank">
-                                        <i class="fa fa-github fa-2x"></i>
-                                    </a>
-                                </span>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/projeto_alura.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">AluraCord</h5>
-                        <p class="card-text">Imersão ao React.js, projeto da Alura que consiste na simulação do chat
-                            do Discord, coletando dados do GitHub.</p>
-
-                            <div style="display: flex; justify-content: center">
-                                <span>
-                                    <a href="https://imersao-react-alura-phi.vercel.app/" target="_blank">
-                                        <i class="fa fa-globe fa-2x"></i>
-                                    </a>
-                                </span>
-                                <span>
-                                    <a href="https://github.com/dsslucas/imersao-react-alura" target="_blank">
-                                        <i class="fa fa-github fa-2x"></i>
-                                    </a>
-                                </span>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/rent-management.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Rent Management</h5>
-                        <p class="card-text">Private project of a lease management system, made with React.js, Material UI, C# and Postgres.</p>
-                        <div style="display: flex; justify-content: center">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/portfolio-edna.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Portfolio</h5>
-                        <p class="card-text">Elaborated to Dra. Prof. Edna Dias Canedo, using HTML5, CSS3, Bootstrap and JavaScript.</p>
-                        <div style="display: flex; justify-content: center">
-                            <span>
-                                <a href="https://ednacanedo.github.io/" target="_blank">
-                                    <i class="fa fa-globe fa-2x"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://github.com/ednacanedo/ednacanedo.github.io" target="_blank">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/img/project/iot-guide-full.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">IoT-Guide</h5>
-                        <p class="card-text">My Undergraduate Thesis, using HTML5, CSS3, Bootstrap and JavaScript.</p>
-
-                        <div style="display: flex; justify-content: center">
-                            <span>
-                                <a href="https://dsslucas.github.io/iot-guide/sobre" target="_blank">
-                                    <i class="fa fa-globe fa-2x"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://github.com/dsslucas/iot-guide" target="_blank">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <section class="row flex-row" id="card_content_wrapper">
+                <script src="assets/js/ListProjects.js"></script>
+                <script type="text/javascript">
+                    renderProjects("en_US")
+                </script>
+            </section>
         </div>
     </section>
 
@@ -427,39 +188,56 @@
 
     <section id="publicacoes">
         <div class="container">
-            <h2>Publications</h2>
+            <script src="assets/js/Publications.js"></script>
+            <header>
+                <h2>
+                    <script type="text/javascript">
+                        renderPublicationMainTitle("title", "en_US")
+                    </script>
+                </h2>
+            </header>
 
-            <div class="row">
-                <div class="publicacoes-image-content col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <section class="row">
+                <div class="publicacoes-image-content col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-5">
                     <img src="assets/img/other/print article.jpg" alt="article" class="publicacoes-image">
                 </div>
 
-                <div class="publicacoes-content col-xs col-sm col-md col-lg col-xl">
-                    <h4>Requirements Engineering Processes in the Context of IoT and Requirements Validation Techniques
+                <div class="publicacoes-content col-xs col-sm col-md col-lg-12 col-xl-6 col-xxl-7">
+                    <h4 class="title">
+                        <script type="text/javascript">
+                            renderPublicationTitlePublication("titlePublication", "en_US")
+                        </script>
                     </h4>
-                    <p>Article presented at WER 2022, based on the Course Completion Work (TCC on Brazil) that I carried out in partnership with Felipe Ayres and guided by Dr. Prof. Edna Dias Canedo, presented on August 9, 2021 at the University of Brasília (UnB).
+                    <p class="subtitle">
+                        <script type="text/javascript">
+                            renderPublicationSubtitle("subtitlePublication", "en_US")
+                        </script>
                     </p>
-                    <p>The article consists of a study in the literature on the processes and techniques of Requirements Engineering aimed at data validation in the context of the Internet of Things (IoT). Based on this, the IoT-Guide was proposed, with the aim of guiding academic and professional projects that adopt IoT and that need to legitimize these data.</p>
+                    <p class="content">
+                        <script type="text/javascript">
+                            renderPublicationContent("content", "en_US")
+                        </script>
+                    </p>
 
-                    <div class="links-publicacao">
-                        <span>
-                            <a href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER22/WER_2022_Camera_ready_paper_31.pdf" target="_blank">
-                                Artigo
-                            </a>
-                        </span>
-                        <span>
-                            <a href="https://bdm.unb.br/handle/10483/29066" target="_blank">
-                                Trabalho
-                            </a>
-                        </span>
-                        <span>
-                            <a href="https://dsslucas.github.io/iot-guide/sobre" target="_blank">
-                                Guia
-                            </a>
-                        </span>
+                    <div id="links-publicacao" class="links-publicacao">
+                        <a target="_blank" id="button_article">
+                            <script type="text/javascript">
+                                renderButtonsLinks("article", "en_US")
+                            </script>
+                        </a>
+                        <a target="_blank" id="button_tcc">
+                            <script type="text/javascript">
+                                renderButtonsLinks("tcc", "en_US")
+                            </script>
+                        </a>
+                        <a target="_blank" id="button_guide">
+                            <script type="text/javascript">
+                                renderButtonsLinks("guide", "en_US")
+                            </script>
+                        </a>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
@@ -472,27 +250,25 @@
                     </div>
                 </div>
             </a>
-
         </div>
     </section>
 
     <footer id="contato">
         <div class="container">
-
             <p class="">
-                <a href="https://www.linkedin.com/in/lucas-silva-souza/?locale=en_US" target="_blank"><i
+                <a href="https://www.linkedin.com/in/lucas-silva-souza/" target="_blank"><i
                         class="fa fa-linkedin fa-2x"></i></a>
                 <a href="https://github.com/dsslucas" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-                <a href="mailto:lucasdasilvasou@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:lucasdasilvasou@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
             </p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
     <script src="assets/js/transparent.js"></script>
+    <script src="assets/js/ChangeLanguage.js"></script>
+    <script src="assets/js/Projects.js"></script>
+    <script src="assets/js/Title.js"></script>
+
 </body>
 
 </html>

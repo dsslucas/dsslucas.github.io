@@ -2,7 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    font-family: 'Oswald', serif;
+    /* font-family: 'Oswald', serif; */
+    font-family: 'Inter', sans-serif;
 }
 
 /* Bandeiras */
@@ -15,8 +16,8 @@ header {
     position: absolute;
 }
 
-h2,
-h4 {
+h1, h2, h3, h4, h5, h6 {
+    /* text-transform: uppercase; */
     text-align: start;
 }
 
@@ -77,6 +78,34 @@ a {
     }
 }
 
+@media only screen and (min-width: 700px) and (max-width: 767px){
+    .container {
+        max-width: 650px !important;
+        width: 650px !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px){
+    .container {
+        max-width: 1250px !important;
+        width: 1250px !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1799px){
+    .container {
+        max-width: 1400px !important;
+        width: 1400px !important;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    .container {
+        max-width: 1800px !important;
+        width: 1800px !important;
+    }
+}
+
 #about,
 #projetos,
 #line,
@@ -96,6 +125,10 @@ hr {
     color: white;
     align-items: center;
     justify-content: center;
+}
+
+#contato a {
+    color: white;
 }
 
 /* Landing Page, exceto Projetos que precisará de mais scroll*/
