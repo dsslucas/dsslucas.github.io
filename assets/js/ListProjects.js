@@ -377,8 +377,6 @@ function renderizeProjects(data){
 }
 
 function renderProjects(language) {
-    console.log("PT_BR: ", projects_pt.length)
-    console.log("en_US: ", projects_en.length)
     if (language == "pt_BR") renderizeProjects(projects_pt)
     else if(language == "en_US") renderizeProjects(projects_en)
 }
