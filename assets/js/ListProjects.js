@@ -11,10 +11,23 @@ const img_projeto_alura = "assets/img/project/projeto_alura.png"
 const img_projeto_locacao_v1 = "assets/img/project/rent-management.png"
 const img_portfolio_edna = "assets/img/project/portfolio-edna.png"
 const img_iot_guide = "assets/img/project/iot-guide-full.png"
+const img_controle_gastos = "assets/img/project/controle-gastos-2.0.png"
 
 const teste = document.getElementById("card_content_wrapper");
 
 const projects_pt = [
+    {
+        title: "Projeto de Controle de Gastos V2.0",
+        description: "Registro e catalogação de gastos por categoria.",
+        technologies: ["React.js", "Node.js", "PostgreSQL", "TailwindCSS"],
+        thumbnail: img_controle_gastos,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/projeto-controle-gastos"
+            }
+        ]
+    },
     {
         title: "Projeto de Gerenciamento de Locações V2.0",
         description: "Segundo projeto fullstack, que gerencia as locações e seus locatários.",
@@ -170,6 +183,18 @@ const projects_pt = [
 ]
 
 const projects_en = [
+    {
+        title: "Expense Control Project V2.0",
+        description: "Register and show payments by category and payment method.",
+        technologies: ["React.js", "Node.js", "PostgreSQL", "TailwindCSS"],
+        thumbnail: img_controle_gastos,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/projeto-controle-gastos"
+            }
+        ]
+    },
     {
         title: "Lease Management V2.0",
         description: "Second fullstack project, which manage leases and your tenants.",
