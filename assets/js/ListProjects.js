@@ -12,6 +12,7 @@ const img_projeto_locacao_v1 = "assets/img/project/rent-management.png"
 const img_portfolio_edna = "assets/img/project/portfolio-edna.png"
 const img_iot_guide = "assets/img/project/iot-guide-full.png"
 const img_controle_gastos = "assets/img/project/controle-gastos-2.0.png"
+const img_backend_project = "assets/img/project/backend-project.jpg"
 
 const teste = document.getElementById("card_content_wrapper");
 
@@ -25,6 +26,18 @@ const projects_pt = [
             {
                 type: "Github",
                 url: "https://github.com/dsslucas/projeto-controle-gastos"
+            }
+        ]
+    },
+    {
+        title: "Controle de monitoria (Backend)",
+        description: "Projeto para gerenciamento de monitorias, havendo registro de usuário, aulas e horários.",
+        technologies: ["Node.js", "PostgreSQL"],
+        thumbnail: img_backend_project,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/controle-monitoria-backend/tree/development"
             }
         ]
     },
@@ -192,6 +205,18 @@ const projects_en = [
             {
                 type: "Github",
                 url: "https://github.com/dsslucas/projeto-controle-gastos"
+            }
+        ]
+    },
+    {
+        title: "Monitoring Control (Backend)",
+        description: "Project for monitoring management, with user registration, classes, and schedules record",
+        technologies: ["Node.js", "PostgreSQL"],
+        thumbnail: img_backend_project,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/controle-monitoria-backend/tree/development"
             }
         ]
     },
