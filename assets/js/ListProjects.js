@@ -12,11 +12,36 @@ const img_projeto_locacao_v1 = "assets/img/project/rent-management.png"
 const img_portfolio_edna = "assets/img/project/portfolio-edna.png"
 const img_iot_guide = "assets/img/project/iot-guide-full.png"
 const img_controle_gastos = "assets/img/project/controle-gastos-2.0.png"
-const img_backend_project = "assets/img/project/backend-project.jpg"
+const img_backend_project = "assets/img/project/backend.jpg"
+const img_goledger = "assets/img/project/goledger.png"
 
 const teste = document.getElementById("card_content_wrapper");
 
 const projects_pt = [
+    {
+        title: "Desafio - GoLedger",
+        description: "Registro de artistas, álbuns, músicas e playlists em blockchain.",
+        technologies: ["React.js", "Node.js", "Blockchain", "TailwindCSS"],
+        thumbnail: img_goledger,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/goledger-challenge-web"
+            }
+        ]
+    },
+    {
+        title: "Imersão Backend Node.js - Alura",
+        description: "Requisições CRUD utilizando Node.js, MongoDB e Gemini.",
+        technologies: ["Node.js", "MongoDB", "Gemini"],
+        thumbnail: img_backend_project,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/curso-backend-gemini-alura"
+            }
+        ]
+    },
     {
         title: "Projeto de Controle de Gastos V2.0",
         description: "Registro e catalogação de gastos por categoria.",
@@ -196,6 +221,30 @@ const projects_pt = [
 ]
 
 const projects_en = [
+    {
+        title: "Challenge - GoLedger",
+        description: "Register of artist, albums, songs and playlists in blockchain application.",
+        technologies: ["React.js", "Node.js", "Blockchain", "TailwindCSS"],
+        thumbnail: img_goledger,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/goledger-challenge-web"
+            }
+        ]
+    },
+    {
+        title: "Backend Immersion Node.js - Alura",
+        description: "CRUD requests using Node.js, MongoDB and Gemini.",
+        technologies: ["Node.js", "MongoDB", "Gemini"],
+        thumbnail: img_backend_project,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/curso-backend-gemini-alura"
+            }
+        ]
+    },
     {
         title: "Expense Control Project V2.0",
         description: "Register and show payments by category and payment method.",
