@@ -6,7 +6,7 @@ const experiences_pt = [
         time: "Fev/2023 a atualmente",
         company: "DBFactory Informática LTDA",
         description: "Criação e manutenção de softwares web",
-        skills: ["React.js", "Node.js", "Angular.js", "Java", "Ant Design", " Wordpress", "Bootstrap", "TailwindCSS", "Bulma.io", "SQL"]
+        skills: ["React.js", "Node.js", "Angular.js", "Java", "Ant Design", " Wordpress", "Bootstrap", "TailwindCSS", "Bulma.io", "SQL", "PL/SQL"]
     },
     {
         title: "Desenvolvedor Frontend",
@@ -44,7 +44,7 @@ const experiences_en = [
         time: "Feb/2023 until now",
         company: "DBFactory Informática LTDA",
         description: "Creating and maintaining web software",
-        skills: ["React.js", "Node.js", "Angular.js", "Java", "Ant Design", " Wordpress", "Bootstrap", "TailwindCSS", "Bulma.io", "SQL"]
+        skills: ["React.js", "Node.js", "Angular.js", "Java", "Ant Design", " Wordpress", "Bootstrap", "TailwindCSS", "Bulma.io", "SQL", "PL/SQL"]
     },
     {
         title: "Frontend Developer",

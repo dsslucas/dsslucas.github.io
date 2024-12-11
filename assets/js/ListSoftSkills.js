@@ -13,7 +13,14 @@ const skills = {
             pt_BR: "Backend",
             en_US: "Backend"
         },
-        values: ["Node.js", "Java", "Python", "Go", "C", "PostgreSQL", "MySQL", "Supabase", "MongoDB"]
+        values: ["Node.js", "Java", "Python", "Go", "C"]
+    },
+    database: {
+        title: {
+            pt_BR: "Bancos de Dados",
+            en_US: "Databases"
+        },
+        values: ["PostgreSQL", "MySQL", "Supabase", "MongoDB", "PL/SQL"]
     },
     others: {
         title: {
