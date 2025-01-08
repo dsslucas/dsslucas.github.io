@@ -14,10 +14,27 @@ const img_iot_guide = "assets/img/project/iot-guide-full.png"
 const img_controle_gastos = "assets/img/project/controle-gastos-2.0.png"
 const img_backend_project = "assets/img/project/backend.jpg"
 const img_goledger = "assets/img/project/goledger.png"
+const img_b7 = "assets/img/project/challenge-b7.png"
 
 const teste = document.getElementById("card_content_wrapper");
 
 const projects_pt = [
+    {
+        title: "Desafio Fullstack - B7",
+        description: "Registro de produtos, suas categorias e usuários.",
+        technologies: ["React.js", "Java", "Spring Boot", "PostgreSQL", "MaterialUI", "JUnit"],
+        thumbnail: img_b7,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/project-b7-backend"
+            },
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/project-b7-frontend"
+            }
+        ]
+    },
     {
         title: "Desafio - GoLedger",
         description: "Registro de artistas, álbuns, músicas e playlists em blockchain.",
@@ -221,6 +238,22 @@ const projects_pt = [
 ]
 
 const projects_en = [
+    {
+        title: "Fullstack Challenge - B7",
+        description: "Register of products, their categories and users.",
+        technologies: ["React.js", "Java", "Spring Boot", "PostgreSQL", "MaterialUI", "JUnit"],
+        thumbnail: img_b7,
+        links: [
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/project-b7-backend"
+            },
+            {
+                type: "Github",
+                url: "https://github.com/dsslucas/project-b7-frontend"
+            }
+        ]
+    },
     {
         title: "Challenge - GoLedger",
         description: "Register of artist, albums, songs and playlists in blockchain application.",
