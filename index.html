@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/presentation.css">
     <link rel="stylesheet" href="assets/css/about.css">
@@ -26,57 +27,66 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
+    <!-- <header id="header-principal" class="fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <nav class="navbar navbar-expand-lg">
+            <button id="botao-collapse" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar_menu_options" aria-controls="navbar_menu_options" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <button id="botao-collapse" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="height: 0" aria-expanded="false">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://dsslucas.github.io/en">
-                                <img src="assets/img/emoji/us.png" alt="us-flag" class="flag">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projetos">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#publicacoes">Publicações</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbar_menu_options" aria-expanded="false">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://dsslucas.github.io/en">
+                            <img src="assets/img/emoji/us.png" alt="us-flag" class="flag">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publicacoes">Publicações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-    </header>
+    </header> -->
 
+    <!-- <main> -->
     <section id="presentation">
         <div class="container">
-            <div class="row" id="presentation_wrapper">
-                <div class="col col-xs-12 col-sm-6 col-md-12 col-lg-12 col-xl-6 column-image">
-                    <img src="assets/img/other/img-perfil.png" alt="photo_presentation" loading="lazy">
+            <div class="row" id="">
+                <div class="col col-xs-12 col-xl-6" id="presentation_photo">
+                    <img src="assets/img/other/img-perfil.png" alt="presentation_photo" loading="lazy">
                 </div>
-                <div class="col col-xs-12 col-sm-6 col-md-12 col-lg col-xl-6 column-content">
-                    <h1 id="h1-presentation">Lucas Souza</h1>
-                    <p id="p-presentation">Desenvolvedor Fullstack</p>
-                    <p class="contact-info">
-                        <a href="https://www.linkedin.com/in/lucas-silva-souza/" target="_blank"><i
-                                class="fa fa-linkedin fa-1x"></i></a>
-                        <a href="https://github.com/dsslucas" target="_blank"><i class="fa fa-github fa-1x"></i></a>
-                        <a href="mailto:lucasdasilvasou@gmail.com"><i class="fa fa-envelope fa-1x"></i></a>
-                    </p>
+                <div class="col col-xs-12 col-xl-6" id="presentation_info">
+                    <h1 id="">Lucas Souza</h1>
+                    <p id="">Desenvolvedor Fullstack</p>
+                    <ul class="items items-aligned">
+                        <li>
+                            <a href="https://www.linkedin.com/in/lucas-silva-souza/" target="_blank">
+                                <i class="fa fa-linkedin fa-1x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/dsslucas" target="_blank">
+                                <i class="fa fa-github fa-1x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:lucasdasilvasou@gmail.com">
+                                <i class="fa fa-envelope fa-1x"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -88,8 +98,8 @@
                 <h2>Sobre</h2>
             </header>
 
-            <section class="row" id="section_about_content">
-                <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 col-xl-3 col-xxl-3" id="column_image_wrapper">
+            <section class="row" id="">
+                <div class="" id="column_image_wrapper">
                     <img src="assets/img/other/img-about.png" alt="image_about" srcset="" loading="lazy">
                 </div>
 
@@ -158,88 +168,89 @@
         </div>
         </div>
     </section>
+    <!-- 
+        <section id="line">
+            <div class="container">
+                <hr>
+            </div>
+        </section>
 
-    <section id="line">
-        <div class="container">
-            <hr>
-        </div>
-    </section>
+        <section id="projetos">
+            <div class="container">
+                <header>
+                    <h2>Projetos</h2>
+                </header>
 
-    <section id="projetos">
-        <div class="container">
-            <header>
-                <h2>Projetos</h2>
-            </header>
-
-            <section class="row flex-row" id="card_content_wrapper">
-                <script src="assets/js/ListProjects.js"></script>
-                <script type="text/javascript">
-                    renderProjects("pt_BR")
-                </script>
-            </section>
-        </div>
-    </section>
-
-    <section id="line">
-        <div class="container">
-            <hr>
-        </div>
-    </section>
-
-    <section id="publicacoes">
-        <div class="container">
-            <script src="assets/js/Publications.js"></script>
-            <header>
-                <h2>
+                <section class="row flex-row" id="card_content_wrapper">
+                    <script src="assets/js/ListProjects.js"></script>
                     <script type="text/javascript">
-                        renderPublicationMainTitle("title", "pt_BR")
+                        renderProjects("pt_BR")
                     </script>
-                </h2>
-            </header>
+                </section>
+            </div>
+        </section>
 
-            <section class="row">
-                <div class="publicacoes-image-content col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-5">
-                    <img src="assets/img/other/print article.jpg" alt="article" class="publicacoes-image">
-                </div>
+        <section id="line">
+            <div class="container">
+                <hr>
+            </div>
+        </section>
 
-                <div class="publicacoes-content col-xs col-sm col-md col-lg-12 col-xl-6 col-xxl-7">
-                    <h4 class="title">
+        <section id="publicacoes">
+            <div class="container">
+                <script src="assets/js/Publications.js"></script>
+                <header>
+                    <h2>
                         <script type="text/javascript">
-                            renderPublicationTitlePublication("titlePublication", "pt_BR")
+                            renderPublicationMainTitle("title", "pt_BR")
                         </script>
-                    </h4>
-                    <p class="subtitle">
-                        <script type="text/javascript">
-                            renderPublicationSubtitle("subtitlePublication", "pt_BR")
-                        </script>
-                    </p>
-                    <p class="content">
-                        <script type="text/javascript">
-                            renderPublicationContent("content", "pt_BR")
-                        </script>
-                    </p>
+                    </h2>
+                </header>
 
-                    <div id="links-publicacao" class="links-publicacao">
-                        <a target="_blank" id="button_article">
-                            <script type="text/javascript">
-                                renderButtonsLinks("article", "pt_BR")
-                            </script>
-                        </a>
-                        <a target="_blank" id="button_tcc">
-                            <script type="text/javascript">
-                                renderButtonsLinks("tcc", "pt_BR")
-                            </script>
-                        </a>
-                        <a target="_blank" id="button_guide">
-                            <script type="text/javascript">
-                                renderButtonsLinks("guide", "pt_BR")
-                            </script>
-                        </a>
+                <section class="row">
+                    <div class="publicacoes-image-content col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-5">
+                        <img src="assets/img/other/print article.jpg" alt="article" class="publicacoes-image">
                     </div>
-                </div>
-            </section>
-        </div>
-    </section>
+
+                    <div class="publicacoes-content col-xs col-sm col-md col-lg-12 col-xl-6 col-xxl-7">
+                        <h4 class="title">
+                            <script type="text/javascript">
+                                renderPublicationTitlePublication("titlePublication", "pt_BR")
+                            </script>
+                        </h4>
+                        <p class="subtitle">
+                            <script type="text/javascript">
+                                renderPublicationSubtitle("subtitlePublication", "pt_BR")
+                            </script>
+                        </p>
+                        <p class="content">
+                            <script type="text/javascript">
+                                renderPublicationContent("content", "pt_BR")
+                            </script>
+                        </p>
+
+                        <div id="links-publicacao" class="links-publicacao">
+                            <a target="_blank" id="button_article">
+                                <script type="text/javascript">
+                                    renderButtonsLinks("article", "pt_BR")
+                                </script>
+                            </a>
+                            <a target="_blank" id="button_tcc">
+                                <script type="text/javascript">
+                                    renderButtonsLinks("tcc", "pt_BR")
+                                </script>
+                            </a>
+                            <a target="_blank" id="button_guide">
+                                <script type="text/javascript">
+                                    renderButtonsLinks("guide", "pt_BR")
+                                </script>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section> -->
+    <!-- </main> -->
 
     <section id="return">
         <div class="container-fluid">
@@ -270,4 +281,5 @@
     <script src="assets/js/Title.js"></script>
 
 </body>
+
 </html>

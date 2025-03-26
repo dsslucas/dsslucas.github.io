@@ -1,198 +1,78 @@
-body {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    /* font-family: 'Oswald', serif; */
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
     font-family: 'Inter', sans-serif;
 }
 
-/* Bandeiras */
-li a .flag {
-    max-width: 1.375rem;
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
-/* Tudo do Header */
-header {
-    position: absolute;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    /* text-transform: uppercase; */
-    text-align: start;
-}
-
-button {
-    background: #00BCEF;
-    margin-left: 0.313rem;
-    margin-right: 0.313rem;
-    border-radius: 0.5rem;
-    height: 2.5rem;
-    width: 5rem;
-    border: 0.094rem solid
-}
-
-button:hover {
-    background: #0086AB
-}
-
-a {
-    color: #000000;
-    margin-left: 5px;
-    margin-right: 5px
-}
-
-/* Lista de Itens */
-#navbarTogglerDemo02 ul li a {
-    font-size: 1.125rem;
-}
-
-.nav-item {
+body > section {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
-}
-
-@media only screen and (max-width: 600px) and (orientation: portrait){
-    /* Do NAV */
-    .nav-item {
-        padding-right: 0.625rem;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .nav-item {
-        padding-right: 0.625rem;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body,
-    li,
-    a,
-    p {
-        font-size: 0.938rem;
-    }
-    
-    .fixed-top {
-        padding-top: 1.5rem;
-    }
-}
-
-@media only screen and (min-width: 700px) and (max-width: 767px){
-    .container {
-        max-width: 650px !important;
-        width: 650px !important;
-    }
-}
-
-@media only screen and (min-width: 1300px) and (max-width: 1400px){
-    .container {
-        max-width: 1250px !important;
-        width: 1250px !important;
-    }
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1799px){
-    .container {
-        max-width: 1400px !important;
-        width: 1400px !important;
-    }
-}
-
-@media only screen and (min-width: 1800px){
-    .container {
-        max-width: 1800px !important;
-        width: 1800px !important;
-    }
-}
-
-#about,
-#projetos,
-#line,
-#publicacoes
-{
-    background: #DCDCDC
-}
-
-hr {
-    color: #007CA1
-}
-
-#presentation,
-#contato,
-#presentation p a i {
-    background-image: url('/assets/img/other/wallpaper.jpg');
-    color: white;
     align-items: center;
     justify-content: center;
+    font-family: Arial, sans-serif;
+    scroll-snap-align: start;
+    background-color: yellowgreen;
 }
 
-#contato a {
+/* Container configurator (only for 720p screens above)*/
+@media only screen and (min-width: 720px){
+    .container {
+        max-width: 95% !important;
+        width: 95% !important;
+    }
+}
+
+/* Icons */
+.items {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Define margem zero */
+    padding: 0; /* Remove padding padrão */    
+}
+
+.items-aligned {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.items a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+}
+
+.items a:hover {
     color: white;
 }
 
-/* Landing Page, exceto Projetos que precisará de mais scroll*/
-#presentation,
-#about,
-#publicacoes {
-    padding-top: 0.313rem;
-    padding-bottom: 0.313rem;
-    height: 100vh;
+/* Text elements */
+h1 {
+    font-weight: bold;
 }
 
-#presentation,
-#about,
-#projetos,
-#contato,
-#publicacoes, #publications {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
+h1, span, p {
+    margin-bottom: 0;
 }
 
-#contato {
-    height: 3.125rem;
+/* Flags */
+.flag {
+    width: 2rem;
+    /*filter: brightness(0.8);*/
 }
 
-#contato p {
-    margin-bottom: 0
+.flag:hover {
+    filter: brightness(0.9);
 }
-
-/* Botão de retorno para a página inicial */
-#return {
-    background: gray;
-    position: fixed;
-    bottom: 0;
-    right: 0.313rem;
-}
-
-#return a {
-    color: black;
-    margin: 0
-}
-
-#return:hover {
-    background-color: #00BCEF
-}
-
-/* Scroll */
-::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
