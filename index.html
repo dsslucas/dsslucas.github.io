@@ -35,7 +35,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse justify-content-end" id="navbar_menu_options">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -59,8 +59,6 @@
             </div>
         </nav>
     </header>
-    
-    
 
     <!-- <main> -->
     <section id="presentation">
@@ -96,78 +94,178 @@
 
     <section id="about">
         <div class="container">
-            <header>
+            <header class="headerSection">
                 <h2>Sobre</h2>
             </header>
 
             <section class="row" id="">
-                <div class="" id="column_image_wrapper">
+                <div class="col col-xs-12 col-xl-3" id="about_image">
                     <img src="assets/img/other/img-about.png" alt="image_about" srcset="" loading="lazy">
                 </div>
 
-                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 col-xl-9 col-xxl-9 about-content"
-                    id="column_content_wrapper">
-                    <div class="row" id="columns_content_about_wrapper">
-                        <script src="assets/js/About.js"></script>
+                <div class="col col-xs-12 col-xl-9" id="about_content">
+                    <div id="about_content_buttons">
+                        <button>
+                            Experiências
+                        </button>
+                        <button>
+                            Educação
+                        </button>
+                        <button>
+                            Tecnologias
+                        </button>
+                    </div>
 
+                    <div id="about_content_details">
+                        <article>
+                            <span class="about_content_indicator">
+                                <i class="fa fa-solid fa-briefcase"></i>
+                            </span>
+                            <div>
+                                <h4>EZTEC</h4>
+                                <h5>Desenvolvedor Fullstack</h5>
+                                <span>02/2023 até o momento</span>
 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-7"
-                            id="column_content_infos">
-                            <div class="row" id="column_education_info">
-
-                                <h3>
-                                    <script type="text/javascript">
-                                        renderEducationTitle("title", "pt_BR")
-                                    </script>
-                                </h3>
-                                <h6>
-                                    <script type="text/javascript">
-                                        renderEducationCollegeName("college", "pt_BR")
-                                    </script>
-                                </h6>
-                                <p>
-                                    <script type="text/javascript">
-                                        renderEducationDescription("description", "pt_BR")
-                                    </script>
-                                </p>
-                            </div>
-                            <div class="row" id="column_professional_experiences">
-                                <h3>
-                                    <script type="text/javascript">
-                                        renderProfessionalExperiencesTitle("professionalExperiences", "pt_BR")
-                                    </script>
-                                </h3>
-
-                                <div class="row" id="list_professional_experiences">
-                                    <div id="list_professional_experiences_wrapper">
-                                        <script src="assets/js/ListProfessionalExperiences.js"></script>
-                                        <script type="text/javascript">
-                                            renderProfessionalExperiences("pt_BR")
-                                        </script>
-                                    </div>
+                                <div style="display: flex; flex-direction: column">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatibus
+                                            dicta ea! Reiciendis eum at molestiae vel debitis. At, eaque! Aliquam
+                                            delectus dolores quasi nulla quis eligendi cumque. Laboriosam, iste.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
+                                            tempora quas quisquam laudantium atque consequuntur, perspiciatis, libero
+                                            quidem aliquam ipsum minima, minus debitis expedita velit natus inventore
+                                            ipsam dolores?</li>
+                                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae aut
+                                            obcaecati, a accusantium numquam doloribus alias, similique distinctio
+                                            debitis vel, nihil cumque quis quas aliquam. Dolores, harum deleniti. Fugit.
+                                        </li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                            voluptatum repellat sint aperiam sed nobis vero reiciendis natus, alias
+                                            similique explicabo laboriosam est enim nostrum necessitatibus commodi,
+                                            porro eligendi rem!</li>
+                                    </ul>
+                                </div>
+                                <div class="professional_skill">
+                                    <span class="professional_skill_span">React.js</span><span
+                                        class="professional_skill_span">Node.js</span><span
+                                        class="professional_skill_span">Angular.js</span><span
+                                        class="professional_skill_span">Java</span><span
+                                        class="professional_skill_span">Ant Design</span><span
+                                        class="professional_skill_span"> Wordpress</span><span
+                                        class="professional_skill_span">Bootstrap</span><span
+                                        class="professional_skill_span">TailwindCSS</span><span
+                                        class="professional_skill_span">Bulma.io</span><span
+                                        class="professional_skill_span">SQL</span><span
+                                        class="professional_skill_span">PL/SQL</span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-5"
-                            id="column_content_technologies">
-                            <h3>
-                                <script type="text/javascript">
-                                    renderTechnologyTitle("technologies", "pt_BR")
-                                </script>
-                            </h3>
+                        <article>
+                            <span class="about_content_indicator">
+                                <i class="fa fa-solid fa-briefcase"></i>
+                            </span>
+                            <div>
+                                <h4>EZTEC</h4>
+                                <h5>Desenvolvedor Fullstack</h5>
+                                <span>02/2023 até o momento</span>
 
-                            <div id="skills_wrapper">
-                                <script src="assets/js/ListSoftSkills.js"></script>
-                                <script type="text/javascript">
-                                    renderSkills("pt_BR")
-                                </script>
+                                <div style="display: flex; flex-direction: column">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatibus
+                                            dicta ea! Reiciendis eum at molestiae vel debitis. At, eaque! Aliquam
+                                            delectus dolores quasi nulla quis eligendi cumque. Laboriosam, iste.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
+                                            tempora quas quisquam laudantium atque consequuntur, perspiciatis, libero
+                                            quidem aliquam ipsum minima, minus debitis expedita velit natus inventore
+                                            ipsam dolores?</li>
+                                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae aut
+                                            obcaecati, a accusantium numquam doloribus alias, similique distinctio
+                                            debitis vel, nihil cumque quis quas aliquam. Dolores, harum deleniti. Fugit.
+                                        </li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                            voluptatum repellat sint aperiam sed nobis vero reiciendis natus, alias
+                                            similique explicabo laboriosam est enim nostrum necessitatibus commodi,
+                                            porro eligendi rem!</li>
+                                    </ul>
+                                </div>
+                                <div class="professional_skill">
+                                    <span class="professional_skill_span">React.js</span><span
+                                        class="professional_skill_span">Node.js</span><span
+                                        class="professional_skill_span">Angular.js</span><span
+                                        class="professional_skill_span">Java</span><span
+                                        class="professional_skill_span">Ant Design</span><span
+                                        class="professional_skill_span"> Wordpress</span><span
+                                        class="professional_skill_span">Bootstrap</span><span
+                                        class="professional_skill_span">TailwindCSS</span><span
+                                        class="professional_skill_span">Bulma.io</span><span
+                                        class="professional_skill_span">SQL</span><span
+                                        class="professional_skill_span">PL/SQL</span>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+
+                        <article>
+                            <span class="about_content_indicator">
+                                <i class="fa fa-solid fa-briefcase"></i>
+                            </span>
+                            <div>
+                                <h4>EZTEC</h4>
+                                <h5>Desenvolvedor Fullstack</h5>
+                                <span>02/2023 até o momento</span>
+
+                                <div style="display: flex; flex-direction: column">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatibus
+                                            dicta ea! Reiciendis eum at molestiae vel debitis. At, eaque! Aliquam
+                                            delectus dolores quasi nulla quis eligendi cumque. Laboriosam, iste.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
+                                            tempora quas quisquam laudantium atque consequuntur, perspiciatis, libero
+                                            quidem aliquam ipsum minima, minus debitis expedita velit natus inventore
+                                            ipsam dolores?</li>
+                                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae aut
+                                            obcaecati, a accusantium numquam doloribus alias, similique distinctio
+                                            debitis vel, nihil cumque quis quas aliquam. Dolores, harum deleniti. Fugit.
+                                        </li>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                            voluptatum repellat sint aperiam sed nobis vero reiciendis natus, alias
+                                            similique explicabo laboriosam est enim nostrum necessitatibus commodi,
+                                            porro eligendi rem!</li>
+                                    </ul>
+                                </div>
+                                <div class="professional_skill">
+                                    <span class="professional_skill_span">React.js</span><span
+                                        class="professional_skill_span">Node.js</span><span
+                                        class="professional_skill_span">Angular.js</span><span
+                                        class="professional_skill_span">Java</span><span
+                                        class="professional_skill_span">Ant Design</span><span
+                                        class="professional_skill_span"> Wordpress</span><span
+                                        class="professional_skill_span">Bootstrap</span><span
+                                        class="professional_skill_span">TailwindCSS</span><span
+                                        class="professional_skill_span">Bulma.io</span><span
+                                        class="professional_skill_span">SQL</span><span
+                                        class="professional_skill_span">PL/SQL</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
         </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <header>
+                <h2>Projetos</h2>
+            </header>
+
+            <section class="row flex-row" id="card_content_wrapper">
+                <!-- <script src="assets/js/ListProjects.js"></script>
+                <script type="text/javascript">
+                    renderProjects("pt_BR")
+                </script> -->
+            </section>
         </div>
     </section>
     <!-- 

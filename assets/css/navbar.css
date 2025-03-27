@@ -5,6 +5,10 @@
     height: 50px;
 } */
 
+#header-principal {
+    height: 0;
+}
+
 nav {
     padding-right: 15px;
 }
