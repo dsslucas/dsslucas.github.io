@@ -1,21 +1,48 @@
-#projetos {
+#projects {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-#projetos .container {
+#projects .container {
     height: 100%;
 }
 
-#projetos header {
+#projects header {
     display: flex;
     align-items: center;
     height: 60px;
 }
 
-#projetos section {
+#projects section {
     display: flex;
     align-items: flex-start;
     height: calc(100svh - 60px);
+}
+
+#projects button {
+    background-color: #0097c0;
+    border: 0;
+    text-transform: uppercase;
+    /* padding-left: 1.2rem; */
+    /* padding-right: 1.2rem; */
+    /* padding-top: 0.5rem; */
+    /* padding-bottom: 0.5rem; */
+    border-radius: 50%;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+}
+
+#projects #projetos_content_cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+    row-gap: 1rem; */
 }
