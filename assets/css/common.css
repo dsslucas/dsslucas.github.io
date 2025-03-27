@@ -102,6 +102,10 @@ p {
     /* background-color: gold; */
 }
 
+.headerSection h2 {
+    font-weight: bold;
+}
+
 /* Technologies indicator */
 .professional_skill {
     display: flex;

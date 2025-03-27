@@ -1,0 +1,21 @@
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#projetos .container {
+    height: 100%;
+}
+
+#projetos header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+#projetos section {
+    display: flex;
+    align-items: flex-start;
+    height: calc(100svh - 60px);
+}
