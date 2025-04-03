@@ -66,8 +66,9 @@ body>section {
     font-size: 1.4rem;
 }
 
-.items a:hover {
-    color: white;
+.items a:hover, 
+#projects #projects_content_cards .card-footer a:hover {
+    color: #0097c0;
 }
 
 /* Text elements */
@@ -81,7 +82,7 @@ h4,
 h5,
 span,
 p {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 /* Flags */
@@ -118,6 +119,10 @@ p {
     color: #3B3B3B;
     padding: 2px 8px;
     border-radius: 15px;
+    font-size: 12px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* buttons */
