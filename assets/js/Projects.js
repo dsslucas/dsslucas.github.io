@@ -27,6 +27,10 @@ const data = {
         en: "Projects",
         pt: "Projetos"
     },
+    searchInput: {
+        en: "Type some used resource...",
+        pt: "Digite um recurso utilizado..."
+    },
     projects: [
         {
             title: {
@@ -333,6 +337,8 @@ const data = {
 }
 
 function render(language) {
+    if(language != "en" && language != "pt") return false;
+
     const headerTitle = document.querySelector("#projects .headerSection h2");
     if (headerTitle) {
         headerTitle.textContent = data.title[language];
@@ -341,8 +347,8 @@ function render(language) {
     renderProjects(null, language);
 
     const input = document.getElementById("project_find_card");
+    input.placeholder = data.searchInput[language];
     input.addEventListener("input", function (event) {
-        console.log("Texto digitado:", event.target.value);
         renderProjects(event.target.value, language);
     });
 }
