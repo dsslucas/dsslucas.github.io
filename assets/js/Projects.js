@@ -18,8 +18,8 @@ const img_b7 = "assets/img/project/challenge-b7.png"
 
 const teste = document.getElementById("projects_content_cards");
 
-function renderProjects(language) {
-    renderizeProjects(language);
+function handleRenderProjects(language) {
+    render(language);
 }
 
 const data = {
@@ -332,17 +332,39 @@ const data = {
     ]
 }
 
-function renderizeProjects(language) {
-    var body = "";
-    var technologies = "";
-    var links = "";
-
+function render(language) {
     const headerTitle = document.querySelector("#projects .headerSection h2");
     if (headerTitle) {
         headerTitle.textContent = data.title[language];
     }
 
-    data.projects.forEach(element => {
+    renderProjects(null, language);
+
+    const input = document.getElementById("project_find_card");
+    input.addEventListener("input", function (event) {
+        console.log("Texto digitado:", event.target.value);
+        renderProjects(event.target.value, language);
+    });
+}
+
+function renderProjects(inputValue, language) {
+    var searchTerm = undefined;
+    var filteredProjects = data.projects;
+
+    var body = "";
+    var technologies = "";
+    var links = "";
+
+    teste.innerHTML = "";
+
+    if (inputValue) {
+        searchTerm = inputValue.toLowerCase();
+        filteredProjects = data.projects.filter(project =>
+            project.technologies.some(tech => tech.toLowerCase().includes(searchTerm))
+        );
+    }
+
+    filteredProjects.forEach(element => {
         technologies = "";
         links = "";
 
@@ -390,5 +412,5 @@ function renderizeProjects(language) {
         `;
 
         teste.innerHTML = body;
-    })
+    });
 }
