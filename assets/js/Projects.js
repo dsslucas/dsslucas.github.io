@@ -22,7 +22,7 @@ function handleRenderProjects(language) {
     render(language);
 }
 
-const data = {
+const projectsData = {
     title: {
         en: "Projects",
         pt: "Projetos"
@@ -268,7 +268,7 @@ const data = {
             },
             description: {
                 pt: "Simulação do chat do Discord, coletando dados do GitHub.",
-                en: "Discord chat simulation with user data on GitHub."
+                en: "Discord chat simulation with user projectsData on GitHub."
             },
             technologies: ["React.js", "Next.js", "Material UI", "Supabase"],
             thumbnail: img_projeto_alura,
@@ -341,13 +341,13 @@ function render(language) {
 
     const headerTitle = document.querySelector("#projects .headerSection h2");
     if (headerTitle) {
-        headerTitle.textContent = data.title[language];
+        headerTitle.textContent = projectsData.title[language];
     }
 
     renderProjects(null, language);
 
     const input = document.getElementById("project_find_card");
-    input.placeholder = data.searchInput[language];
+    input.placeholder = projectsData.searchInput[language];
     input.addEventListener("input", function (event) {
         renderProjects(event.target.value, language);
     });
@@ -355,7 +355,7 @@ function render(language) {
 
 function renderProjects(inputValue, language) {
     var searchTerm = undefined;
-    var filteredProjects = data.projects;
+    var filteredProjects = projectsData.projects;
 
     var body = "";
     var technologies = "";
@@ -365,7 +365,7 @@ function renderProjects(inputValue, language) {
 
     if (inputValue) {
         searchTerm = inputValue.toLowerCase();
-        filteredProjects = data.projects.filter(project =>
+        filteredProjects = projectsData.projects.filter(project =>
             project.technologies.some(tech => tech.toLowerCase().includes(searchTerm))
         );
     }

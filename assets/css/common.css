@@ -133,3 +133,9 @@ button {
 button:hover {
     filter: brightness(0.9);
 }
+
+/* Date Style */
+.date {
+    color: #8b8b8b;
+    font-size: 12px;
+}
