@@ -384,7 +384,7 @@ function renderProjects(inputValue, language) {
             element.links.forEach((item) => {
                 var classIcon = ""
                 if (item.type === "URL") classIcon = "fa-globe"
-                else if (item.type === "Github") classIcon = "fa-github"
+                else if (item.type === "Github") classIcon = "fa-brands fa-github"
 
                 links += `
                     <a href=${item.url} target="_blank">
