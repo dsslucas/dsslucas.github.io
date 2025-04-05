@@ -382,15 +382,15 @@ function renderProjects(inputValue, language) {
 
         if (element.links.length > 0) {
             element.links.forEach((item) => {
-                var classIcon = ""
-                if (item.type === "URL") classIcon = "fa-globe"
-                else if (item.type === "Github") classIcon = "fa-brands fa-github"
+                var classIcon = "";
+                if (item.type === "URL") classIcon = "fa-globe";
+                else if (item.type === "Github") classIcon = "fa-brands fa-github";
 
                 links += `
-                    <a href=${item.url} target="_blank">
-                        <i class="fa ${classIcon} fa-2x"></i>
+                    <a href=${item.url} target="_blank" class="btn btn-sm btn-outline-secondary redirectButton" title="Website">
+                        <i class="fa ${classIcon}"></i>
                     </a>
-                `
+                `;
             })
         }
 
@@ -410,9 +410,11 @@ function renderProjects(inputValue, language) {
                             ${technologies}
                         </div>
                     </div>
-                    <div class="card-footer">
-                        ${links}
-                    </div>
+                    ${links ? `
+                         <div class="card-footer">
+                            ${links}
+                        </div>
+                    ` : ""}                   
                 </div>
             </div>
         `;

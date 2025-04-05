@@ -5,25 +5,25 @@ const aboutData = {
     },
     buttons: [
         {
-            id: "about_experiences",
+            id: "experiences",
             label: {
                 en: "Experiences",
                 pt: "Experiências"
             }
         }, {
-            id: "about_education",
+            id: "education",
             label: {
                 en: "Education",
                 pt: "Formação"
             }
         }, {
-            id: "about_technologies",
+            id: "technologies",
             label: {
                 en: "Technologies",
                 pt: "Tecnologias"
             }
         }, {
-            id: "about_publications",
+            id: "publications",
             label: {
                 en: "Publications",
                 pt: "Publicações"
@@ -128,7 +128,7 @@ const aboutData = {
             },
             workType: {
                 en: "Remote",
-                pt: "Remote"
+                pt: "Remoto"
             },
             startDate: new Date("2021-08-02"),
             endDate: new Date("2021-12-20"),
@@ -335,26 +335,20 @@ const aboutData = {
                     "O artigo consiste de um estudo na literatura sobre os processos e técnicas da Engenharia de Requisitos voltadas para a validação de dados no contexto de Internet das Coisas (IoT). Com base nisto, foi proposto o IoT-Guide, com o intuito de nortear projetos acadêmicos e profissionais que adotem IoT e que necessitam de uma legitimação destes dados"
                 ]
             },
-            buttons: [{
-                label: {
-                    en: "Article",
-                    pt: "Artigo"
+            links: [
+                {
+                    type: "URL",
+                    url: "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER22/WER_2022_Camera_ready_paper_31.pdf"
                 },
-                url: "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER22/WER_2022_Camera_ready_paper_31.pdf"
-            }, {
-                label: {
-                    en: "Thesis",
-                    pt: "TCC"
+                {
+                    type: "URL",
+                    url: "https://bdm.unb.br/handle/10483/29066"
                 },
-                url: "https://bdm.unb.br/handle/10483/29066"
-            },
-            {
-                label: {
-                    en: "Guide",
-                    pt: "Guia"
-                },
-                url: "https://dsslucas.github.io/iot-guide/sobre"
-            }],
+                {
+                    type: "URL",
+                    url: "https://dsslucas.github.io/iot-guide/sobre"
+                }
+            ],
             icon: "file"
         }
     ]
@@ -373,16 +367,21 @@ document.addEventListener("DOMContentLoaded", function () {
         headerTitle.textContent = aboutData.title[language];
     }
 
-    renderAboutButtons(language);
+    const aboutContentButtons = document.getElementById("about_content_buttons");
+    renderAboutButtons(aboutContentButtons, language);
 
-    renderAboutContent();
+    aboutContentButtons.addEventListener("click", function (event) {
+        console.log("oi")
+        console.log(event.target.id)
+        renderAboutContent(event.target.id, language);
+    });
+
+    renderAboutContent("experiences", language);
 
     console.log(aboutData)
 });
 
-function renderAboutButtons(language) {
-    const aboutContentButtons = document.getElementById("about_content_buttons");
-
+function renderAboutButtons(aboutContentButtons, language) {
     if (Array.isArray(aboutData.buttons)) {
         var buttons = "";
 
@@ -396,76 +395,115 @@ function renderAboutButtons(language) {
         });
 
         aboutContentButtons.innerHTML = buttons;
-    }    
+    }
 }
 
 function renderAboutContent(type, language) {
     const aboutContentSection = document.getElementById("about_content_details");
+    let content = "";
 
-    aboutContentSection.innerHTML = `
-        <article>
-            <span class="about_content_indicator">
-                <i class="fa fa-solid fa-briefcase"></i>
-            </span>
-            <div class="about_content_info">
-                <header>
-                    <div class="about_content_info_header_principal">
-                        <h5>DBFactory Informatica LTDA</h5>
-                        <h6 class="role">Desenvolvedor Fullstack</h6>
-                        <small class="period">02/2023 até o momento — 1 ano e 2
-                            meses</small>
-                        <span class="">Remoto</span>
-                        <!-- <span class="badge bg-info">Voluntário</span> -->
-                    </div>
-                    <div class="about_content_info_header_links">
-                        <a href="https://github.com/eztec" target="_blank"
-                            class="btn btn-sm btn-outline-secondary" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.eztec.com.br" target="_blank"
-                            class="btn btn-sm btn-outline-secondary" title="Website">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
-                        <a href="mailto:contato@eztec.com.br" class="btn btn-sm btn-outline-secondary"
-                            title="Email">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                </header>
-                <section>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatibus
-                            dicta ea! Reiciendis eum at molestiae vel debitis. At, eaque! Aliquam
-                            delectus dolores quasi nulla quis eligendi cumque. Laboriosam, iste.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
-                            tempora quas quisquam laudantium atque consequuntur, perspiciatis, libero
-                            quidem aliquam ipsum minima, minus debitis expedita velit natus inventore
-                            ipsam dolores?</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae aut
-                            obcaecati, a accusantium numquam doloribus alias, similique distinctio
-                            debitis vel, nihil cumque quis quas aliquam. Dolores, harum deleniti. Fugit.
-                        </li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                            voluptatum repellat sint aperiam sed nobis vero reiciendis natus, alias
-                            similique explicabo laboriosam est enim nostrum necessitatibus commodi,
-                            porro eligendi rem!</li>
-                    </ul>
-                </section>
-                <footer>
-                    <div class="professional_skill">
-                        <span class="professional_skill_span">React.js</span><span
-                            class="professional_skill_span">Node.js</span><span
-                            class="professional_skill_span">Angular.js</span><span
-                            class="professional_skill_span">Java</span><span
-                            class="professional_skill_span">Ant
-                            Design</span><span class="professional_skill_span"> Wordpress</span><span
-                            class="professional_skill_span">Bootstrap</span><span
-                            class="professional_skill_span">TailwindCSS</span><span
-                            class="professional_skill_span">Bulma.io</span><span
-                            class="professional_skill_span">SQL</span><span
-                            class="professional_skill_span">PL/SQL</span>
-                    </div>
-                </footer>
-        </article>
-    `;
+    if (Array.isArray(aboutData[type])) {
+        console.log(aboutData[type])
+        aboutData[type].forEach((element) => {
+            const title = element.title ? element.title[language] : undefined;
+            const assignment = element.assignment ? element.assignment[language] : undefined;
+            const workType = element.workType ? element.workType[language] : undefined;
+            const address = element.location ? element.location[language] : undefined;
+
+            const startDate = element.startDate ? renderDateFormatted(element.startDate, element.endDate, language): undefined;
+
+            const linksHtml = (element.links || []).map(link => {
+                let iconClass = '';
+                let title = '';
+
+                switch (link.type) {
+                    case 'GITHUB':
+                        iconClass = 'fab fa-github';
+                        title = 'GitHub';
+                        break;
+                    case 'URL':
+                        iconClass = 'fa-solid fa-globe';
+                        title = 'Website';
+                        break;
+                    case 'EMAIL':
+                        iconClass = 'fa-solid fa-envelope';
+                        title = 'Email';
+                        break;
+                    case 'LINKEDIN':
+                        iconClass = 'fab fa-linkedin';
+                        title = 'LinkedIn';
+                        break;
+                    default:
+                        iconClass = 'fa-solid fa-link';
+                        title = 'Link';
+                }
+
+                return `<a href="${link.url}" target="_blank" class="btn btn-sm btn-outline-secondary redirectButton" title="${title}">
+                            <i class="${iconClass}"></i>
+                        </a>`;
+            }).join('');
+
+            const responsabilities = element.responsabilities && Object.keys(element.responsabilities[language])
+                ? (element.responsabilities[language] || []).map((item, index, arr) => {
+                    const isLast = index === arr.length - 1;
+                    return `<li>${item}${isLast ? "." : ";"}</li>`;
+                }).join('')
+                : "";
+
+            const technologies = (element.technologies || []).map(element => {
+                let iconClass = '';
+                let title = '';
+
+                return `<span class="professional_skill_span">${element}</span>`;
+            }).join('');
+
+            const text = element.text && Object.keys(element.text[language]) ? (element.text[language] || []).map((item) => {
+                return `<p>${item}</p>`;
+            }).join('')
+                : "";
+
+            content += `
+                <article>
+                    <span class="about_content_indicator">
+                        <i class="fa fa-solid fa-${element.icon}"></i>
+                    </span>
+                    <div class="about_content_info">
+                        <header>
+                            <div class="about_content_info_header_principal">
+                                <div class="header_principal_title">
+                                    ${title ? `<h5>${title}</h5>` : ''}
+                                    ${address ? `
+                                        <small> - </small>
+                                        <address class="text-muted">${address}</address>
+                                        ` : ''} 
+                                </div>                               
+                                ${assignment ? `<h6 class="role">${assignment}</h6>` : ''}
+                                ${startDate ? `<small class="period">${startDate}</small>`: ""}                                
+                                ${workType ? `<span>${workType}</span>` : ''}
+                            </div>
+                            <div class="about_content_info_header_links">
+                                ${linksHtml}
+                            </div>
+                        </header>
+                        ${responsabilities || text ? `
+                            <section>
+                                ${responsabilities && `<ul>
+                                    ${responsabilities}
+                                </ul>`}
+                                ${text && ` ${text}`}
+                            </section>
+                            ` : ""}
+                        <footer>
+                            ${technologies ? `
+                                <div class="professional_skill">
+                                    ${technologies}
+                                </div>
+                            ` : ""}                            
+                        </footer>
+                </article>
+            `;
+        });
+    }
+
+    aboutContentSection.innerHTML = content;
 }
