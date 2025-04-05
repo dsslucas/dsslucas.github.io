@@ -1,442 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masonry Flexbox</title>
-  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/css/project-1.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: green;
-      height: 100svh;
-      overflow: hidden;
-    }
-
-    .container {
-      display: grid;
-      width: 90%;
-      margin: auto;
-
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      /* grid-auto-rows: 80px; */
-      /* Define a altura mínima das linhas */
-      gap: 1rem;
-      background-color: #ccc;
-      height: 93%;
-      overflow-y: auto;
-    }
-
-    .card {
-      border-radius: 3px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 15px;
-    }
-
-    .card:nth-of-type(1n) {
-      order: 1;
-      background-color: red;
-    }
-
-    .card:nth-of-type(5n+2) {
-      order: 2;
-      background-color: dodgerblue;
-    }
-
-    .card:nth-of-type(5n+3) {
-      order: 3;
-      background-color: yellow;
-    }
-
-    .card:nth-of-type(5n+4) {
-      order: 4;
-      background-color: aqua;
-    }
-
-    .card:nth-of-type(5n) {
-      order: 5;
-      background-color: rgb(172, 125, 172);
-    }
-
-    figure {
-      margin: 0;
-      padding: 0;
-    }
-
-    figure,
-    img {
-      width: 100%;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiência Profissional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
+<body class="bg-light p-4">
 
-<body>
-  <div class="container">
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+  <article class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <header class="d-flex align-items-start justify-content-between mb-3">
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-primary fs-4">
+            <i class="fa-solid fa-briefcase"></i>
+          </span>
+          <div>
+            <h4 class="m-0 text-uppercase fw-bold">EZTEC</h4>
+            <h5 class="text-muted m-0">Desenvolvedor Fullstack</h5>
+            <small class="text-body-secondary">02/2023 até o momento — 1 ano e 2 meses</small>
+            <div class="mt-1">
+              <span class="badge bg-success">Remoto</span>
+              <!-- <span class="badge bg-info">Voluntário</span> -->
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span>
+        <div class="d-flex gap-2">
+          <a href="https://github.com/eztec" target="_blank" class="btn btn-sm btn-outline-secondary" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.eztec.com.br" target="_blank" class="btn btn-sm btn-outline-secondary" title="Website">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="mailto:contato@eztec.com.br" class="btn btn-sm btn-outline-secondary" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
+      </header>
 
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
+      <section>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item px-0">Desenvolvimento de aplicações fullstack utilizando React.js e Node.js.</li>
+          <li class="list-group-item px-0">Criação e manutenção de sistemas internos com foco em performance e escalabilidade.</li>
+          <li class="list-group-item px-0">Participação ativa em decisões de arquitetura e melhorias de processos.</li>
+          <li class="list-group-item px-0">Colaboração em projetos usando metodologias ágeis como Scrum e Kanban.</li>
+        </ul>
+      </section>
 
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+      <footer>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge bg-secondary">React.js</span>
+          <span class="badge bg-secondary">Node.js</span>
+          <span class="badge bg-secondary">Angular.js</span>
+          <span class="badge bg-secondary">Java</span>
+          <span class="badge bg-secondary">Ant Design</span>
+          <span class="badge bg-secondary">WordPress</span>
+          <span class="badge bg-secondary">Bootstrap</span>
+          <span class="badge bg-secondary">TailwindCSS</span>
+          <span class="badge bg-secondary">Bulma.io</span>
+          <span class="badge bg-secondary">SQL</span>
+          <span class="badge bg-secondary">PL/SQL</span>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
+      </footer>
     </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+  </article>
+
+  <article class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <header class="d-flex align-items-start justify-content-between mb-3">
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-primary fs-4">
+            <i class="fa-solid fa-briefcase"></i>
+          </span>
+          <div>
+            <h4 class="m-0 text-uppercase fw-bold">EZTEC</h4>
+            <h5 class="text-muted m-0">Desenvolvedor Fullstack</h5>
+            <small class="text-body-secondary">02/2023 até o momento — 1 ano e 2 meses</small>
+            <div class="mt-1">
+              <span class="badge bg-success">Remoto</span>
+              <!-- <span class="badge bg-info">Voluntário</span> -->
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+        <div class="d-flex gap-2">
+          <a href="https://github.com/eztec" target="_blank" class="btn btn-sm btn-outline-secondary" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.eztec.com.br" target="_blank" class="btn btn-sm btn-outline-secondary" title="Website">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="mailto:contato@eztec.com.br" class="btn btn-sm btn-outline-secondary" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
+      </header>
 
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+      <section>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item px-0">Desenvolvimento de aplicações fullstack utilizando React.js e Node.js.</li>
+          <li class="list-group-item px-0">Criação e manutenção de sistemas internos com foco em performance e escalabilidade.</li>
+          <li class="list-group-item px-0">Participação ativa em decisões de arquitetura e melhorias de processos.</li>
+          <li class="list-group-item px-0">Colaboração em projetos usando metodologias ágeis como Scrum e Kanban.</li>
+        </ul>
+      </section>
+
+      <footer>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge bg-secondary">React.js</span>
+          <span class="badge bg-secondary">Node.js</span>
+          <span class="badge bg-secondary">Angular.js</span>
+          <span class="badge bg-secondary">Java</span>
+          <span class="badge bg-secondary">Ant Design</span>
+          <span class="badge bg-secondary">WordPress</span>
+          <span class="badge bg-secondary">Bootstrap</span>
+          <span class="badge bg-secondary">TailwindCSS</span>
+          <span class="badge bg-secondary">Bulma.io</span>
+          <span class="badge bg-secondary">SQL</span>
+          <span class="badge bg-secondary">PL/SQL</span>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
+      </footer>
     </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+  </article>
+
+  <article class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <header class="d-flex align-items-start justify-content-between mb-3">
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-primary fs-4">
+            <i class="fa-solid fa-briefcase"></i>
+          </span>
+          <div>
+            <h4 class="m-0 text-uppercase fw-bold">EZTEC</h4>
+            <h5 class="text-muted m-0">Desenvolvedor Fullstack</h5>
+            <small class="text-body-secondary">02/2023 até o momento — 1 ano e 2 meses</small>
+            <div class="mt-1">
+              <span class="badge bg-success">Remoto</span>
+              <!-- <span class="badge bg-info">Voluntário</span> -->
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+        <div class="d-flex gap-2">
+          <a href="https://github.com/eztec" target="_blank" class="btn btn-sm btn-outline-secondary" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.eztec.com.br" target="_blank" class="btn btn-sm btn-outline-secondary" title="Website">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="mailto:contato@eztec.com.br" class="btn btn-sm btn-outline-secondary" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
+      </header>
 
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
+      <section>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item px-0">Desenvolvimento de aplicações fullstack utilizando React.js e Node.js.</li>
+          <li class="list-group-item px-0">Criação e manutenção de sistemas internos com foco em performance e escalabilidade.</li>
+          <li class="list-group-item px-0">Participação ativa em decisões de arquitetura e melhorias de processos.</li>
+          <li class="list-group-item px-0">Colaboração em projetos usando metodologias ágeis como Scrum e Kanban.</li>
+        </ul>
+      </section>
+
+      <footer>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge bg-secondary">React.js</span>
+          <span class="badge bg-secondary">Node.js</span>
+          <span class="badge bg-secondary">Angular.js</span>
+          <span class="badge bg-secondary">Java</span>
+          <span class="badge bg-secondary">Ant Design</span>
+          <span class="badge bg-secondary">WordPress</span>
+          <span class="badge bg-secondary">Bootstrap</span>
+          <span class="badge bg-secondary">TailwindCSS</span>
+          <span class="badge bg-secondary">Bulma.io</span>
+          <span class="badge bg-secondary">SQL</span>
+          <span class="badge bg-secondary">PL/SQL</span>
         </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
+      </footer>
     </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
+  </article>
 
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <figure class="card-image">
-        <img src="assets/img/project/challenge-b7.png" class="card-img-top img-thumbnail" alt="...">
-      </figure>
-      <div class="card-header">
-        <h5 class="card-title">Desafio Fullstack - B7</h5>
-        <p class="card-text">Registro de produtos, suas categorias e usuários.</p>
-        <span class="card-date">MAR/2025 - JUN/2025</span>
-      </div>
-      <div class="card-body">
-        <div class="professional_skill">
-          <span class="professional_skill_span">React.js</span><span class="professional_skill_span">Java</span><span
-            class="professional_skill_span">Spring
-            Boot</span><span class="professional_skill_span">PostgreSQL</span><span
-            class="professional_skill_span">MaterialUI</span><span class="professional_skill_span">JUnit</span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <a href="https://github.com/dsslucas/project-b7-backend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-
-        <a href="https://github.com/dsslucas/project-b7-frontend" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Repita os cards conforme necessário -->
-  </div>
-
-  <script>
-    function ajustarAlturaCards() {
-      document.querySelectorAll(".card").forEach(card => {
-        const altura = card.getBoundingClientRect().height;
-        const linhas = Math.ceil(altura / 10); // Divide pela altura base (10px)
-        card.style.gridRow = `span ${linhas}`;
-      });
-    }
-
-    // Executa ao carregar e quando a página for redimensionada
-    window.addEventListener("load", ajustarAlturaCards);
-    window.addEventListener("resize", ajustarAlturaCards);
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

@@ -78,6 +78,7 @@
     max-height: 93%;
     overflow-y: auto;
     overflow-x: hidden;
+    margin: 0;
 }
 
 @media (max-width: 992px) and (orientation: portrait) {
