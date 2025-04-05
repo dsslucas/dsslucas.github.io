@@ -1,29 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
     const returnSection = document.getElementById("return");
     const nav = document.querySelector('nav');
-    const li = document.getElementsByClassName("nav-item");
-    const buttonCollapse = document.getElementById("botao-collapse");
-    const buttonOptions = document.getElementById('navbarTogglerDemo02')
-
 
     // Esconde inicialmente
     returnSection.style.display = "none";
 
-    // Listener no elemento que está realmente rolando
+    let isVisible = false;
+
     document.body.addEventListener("scroll", () => {
-        console.log("scroll detectado");
-        console.log(document.body.scrollTop);
+        const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
 
-        if (document.body.scrollTop > 0) {
+        if (scrolled > 0 && !isVisible) {
+            isVisible = true;
             returnSection.style.display = "flex";
-            nav.classList.remove('navbar-dark');
-            nav.classList.add('navbar-light')
+            returnSection.classList.remove("fadeOut");
+            returnSection.classList.add("fadeIn");
 
-        } else {
-            returnSection.style.display = "none";
+            nav.classList.remove('navbar-dark');
+            nav.classList.add('navbar-light');
+        }
+
+        if (scrolled === 0 && isVisible) {
+            isVisible = false;
+            returnSection.classList.remove("fadeIn");
+            returnSection.classList.add("fadeOut");
+
             nav.classList.add('navbar-dark');
-            nav.classList.remove('navbar-light')
+            nav.classList.remove('navbar-light');
         }
     });
 
+    // Aguarda a animação terminar antes de ocultar
+    returnSection.addEventListener("animationend", (event) => {
+        if (event.animationName === "fadeOut") {
+            returnSection.style.display = "none";
+        }
+    });
 });
