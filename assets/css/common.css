@@ -27,9 +27,16 @@ body>section {
     overflow-x: hidden;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 1200px) and (orientation: portrait){
     body>section {
         min-height: 100svh;
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) and (orientation: landscape){
+    body>section {
+        height: 100svh !important;
         overflow-y: auto;
     }
 }

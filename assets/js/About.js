@@ -410,7 +410,7 @@ function renderAboutContent(type, language) {
             const workType = element.workType ? element.workType[language] : undefined;
             const address = element.location ? element.location[language] : undefined;
 
-            const startDate = element.startDate ? renderDateFormatted(element.startDate, element.endDate, language): undefined;
+            const startDate = element.startDate ? renderDateFormatted(element.startDate, element.endDate, language) : undefined;
 
             const linksHtml = (element.links || []).map(link => {
                 let iconClass = '';
@@ -470,20 +470,17 @@ function renderAboutContent(type, language) {
                     <div class="about_content_info">
                         <header>
                             <div class="about_content_info_header_principal">
-                                <div class="header_principal_title">
-                                    ${title ? `<h5>${title}</h5>` : ''}
-                                    ${address ? `
-                                        <small> - </small>
-                                        <address class="text-muted">${address}</address>
-                                        ` : ''} 
-                                </div>                               
+                                ${title ? `<h5>${title}</h5>` : ''}
                                 ${assignment ? `<h6 class="role">${assignment}</h6>` : ''}
-                                ${startDate ? `<small class="period">${startDate}</small>`: ""}                                
+                                ${startDate ? `<small class="period">${startDate}</small>` : ""}
+                                ${address ? `<address class="text-muted">${address}</address>` : ""}
                                 ${workType ? `<span>${workType}</span>` : ''}
                             </div>
-                            <div class="about_content_info_header_links">
-                                ${linksHtml}
-                            </div>
+                            ${linksHtml ? `
+                                <div class="about_content_info_header_links">
+                                    ${linksHtml}
+                                </div>
+                                ` : ""}                           
                         </header>
                         ${responsabilities || text ? `
                             <section>
