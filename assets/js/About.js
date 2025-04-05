@@ -302,7 +302,7 @@ const aboutData = {
                 pt: "Banco de Dados"
             },
             icon: "database",
-            technologies: ["SQL", "PostgreSQL", "PL/SQL", "MongoDB"],            
+            technologies: ["SQL", "PostgreSQL", "PL/SQL", "MongoDB"],
         }, {
             title: {
                 en: "Test",
@@ -372,4 +372,100 @@ document.addEventListener("DOMContentLoaded", function () {
     if (headerTitle) {
         headerTitle.textContent = aboutData.title[language];
     }
+
+    renderAboutButtons(language);
+
+    renderAboutContent();
+
+    console.log(aboutData)
 });
+
+function renderAboutButtons(language) {
+    const aboutContentButtons = document.getElementById("about_content_buttons");
+
+    if (Array.isArray(aboutData.buttons)) {
+        var buttons = "";
+
+        aboutData.buttons.forEach((element) => {
+            console.log(element)
+            buttons += `
+                <button id="${element.id}">
+                    ${element.label[language]}
+                </button>
+            `;
+        });
+
+        aboutContentButtons.innerHTML = buttons;
+    }    
+}
+
+function renderAboutContent(type, language) {
+    const aboutContentSection = document.getElementById("about_content_details");
+
+    aboutContentSection.innerHTML = `
+        <article>
+            <span class="about_content_indicator">
+                <i class="fa fa-solid fa-briefcase"></i>
+            </span>
+            <div class="about_content_info">
+                <header>
+                    <div class="about_content_info_header_principal">
+                        <h5>DBFactory Informatica LTDA</h5>
+                        <h6 class="role">Desenvolvedor Fullstack</h6>
+                        <small class="period">02/2023 até o momento — 1 ano e 2
+                            meses</small>
+                        <span class="">Remoto</span>
+                        <!-- <span class="badge bg-info">Voluntário</span> -->
+                    </div>
+                    <div class="about_content_info_header_links">
+                        <a href="https://github.com/eztec" target="_blank"
+                            class="btn btn-sm btn-outline-secondary" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.eztec.com.br" target="_blank"
+                            class="btn btn-sm btn-outline-secondary" title="Website">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="mailto:contato@eztec.com.br" class="btn btn-sm btn-outline-secondary"
+                            title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </header>
+                <section>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatibus
+                            dicta ea! Reiciendis eum at molestiae vel debitis. At, eaque! Aliquam
+                            delectus dolores quasi nulla quis eligendi cumque. Laboriosam, iste.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
+                            tempora quas quisquam laudantium atque consequuntur, perspiciatis, libero
+                            quidem aliquam ipsum minima, minus debitis expedita velit natus inventore
+                            ipsam dolores?</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae aut
+                            obcaecati, a accusantium numquam doloribus alias, similique distinctio
+                            debitis vel, nihil cumque quis quas aliquam. Dolores, harum deleniti. Fugit.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            voluptatum repellat sint aperiam sed nobis vero reiciendis natus, alias
+                            similique explicabo laboriosam est enim nostrum necessitatibus commodi,
+                            porro eligendi rem!</li>
+                    </ul>
+                </section>
+                <footer>
+                    <div class="professional_skill">
+                        <span class="professional_skill_span">React.js</span><span
+                            class="professional_skill_span">Node.js</span><span
+                            class="professional_skill_span">Angular.js</span><span
+                            class="professional_skill_span">Java</span><span
+                            class="professional_skill_span">Ant
+                            Design</span><span class="professional_skill_span"> Wordpress</span><span
+                            class="professional_skill_span">Bootstrap</span><span
+                            class="professional_skill_span">TailwindCSS</span><span
+                            class="professional_skill_span">Bulma.io</span><span
+                            class="professional_skill_span">SQL</span><span
+                            class="professional_skill_span">PL/SQL</span>
+                    </div>
+                </footer>
+        </article>
+    `;
+}

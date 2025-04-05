@@ -3,6 +3,14 @@
     color: #e5e5e5;
 }
 
+#presentation h1, p {
+    text-transform: none;
+}
+
+#presentation p {
+    font-weight: 500;
+}
+
 /* Image */
 @media only screen and (min-width: 320px) and (orientation: portrait){
     #presentation .row {
