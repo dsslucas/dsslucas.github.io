@@ -398,6 +398,8 @@ function renderAboutContent(type, language) {
     const aboutContentSection = document.getElementById("about_content_details");
     let content = "";
 
+    aboutContentSection.scrollTo({ top: 0, behavior: "smooth" });
+
     if (Array.isArray(aboutData[type])) {
         console.log(aboutData[type])
         aboutData[type].forEach((element) => {

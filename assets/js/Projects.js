@@ -417,22 +417,12 @@ function renderProjects(inputValue, language) {
         `;
 
         teste.innerHTML = body;
-
-        // Aguarda o carregamento das imagens antes de aplicar o Masonry
+        
         imagesLoaded(teste, function () {
             new Masonry(teste, {
-                itemSelector: '.col-sm-6', // ou apenas '.col'
+                itemSelector: '.col-sm-6',
                 percentPosition: true
             });
         });
-    });
-
-    // var msnry = new Masonry('#projects_content_cards', {
-    //     itemSelector: '.col',
-    //     percentPosition: true
-    // });
-
-    // console.log(msnry)
-
-    
+    });    
 }
