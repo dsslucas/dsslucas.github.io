@@ -26,10 +26,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
 
 
 
@@ -122,6 +118,7 @@
 
     <section id="projects">
         <div class="container">
+            <script src="assets/js/projects.js"></script>
             <header class="headerSection">
                 <h2></h2>
             </header>
@@ -133,78 +130,11 @@
                     </span>
                     <input type="text" id="project_find_card" placeholder="Digite um recurso utilizado...">
                 </div>
-                <div id="projects_content_cards" class="row" data-masonry='{"percentPosition": true }'>
-                    <script src="assets/js/projects.js"></script>
-                    <script type="text/javascript">
-                        handleRenderProjects("pt")
-                    </script>
+                <div id="projects_content_cards" class="row" data-masonry='{"percentPosition": true }'>                    
                 </div>
             </section>
         </div>
     </section>
-    <!-- 
-
-        <section id="line">
-            <div class="container">
-                <hr>
-            </div>
-        </section>
-
-        <section id="publicacoes">
-            <div class="container">
-                <script src="assets/js/Publications.js"></script>
-                <header>
-                    <h2>
-                        <script type="text/javascript">
-                            renderPublicationMainTitle("title", "pt_BR")
-                        </script>
-                    </h2>
-                </header>
-
-                <section class="row">
-                    <div class="publicacoes-image-content col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-5">
-                        <img src="assets/img/other/print article.jpg" alt="article" class="publicacoes-image">
-                    </div>
-
-                    <div class="publicacoes-content col-xs col-sm col-md col-lg-12 col-xl-6 col-xxl-7">
-                        <h4 class="title">
-                            <script type="text/javascript">
-                                renderPublicationTitlePublication("titlePublication", "pt_BR")
-                            </script>
-                        </h4>
-                        <p class="subtitle">
-                            <script type="text/javascript">
-                                renderPublicationSubtitle("subtitlePublication", "pt_BR")
-                            </script>
-                        </p>
-                        <p class="content">
-                            <script type="text/javascript">
-                                renderPublicationContent("content", "pt_BR")
-                            </script>
-                        </p>
-
-                        <div id="links-publicacao" class="links-publicacao">
-                            <a target="_blank" id="button_article">
-                                <script type="text/javascript">
-                                    renderButtonsLinks("article", "pt_BR")
-                                </script>
-                            </a>
-                            <a target="_blank" id="button_tcc">
-                                <script type="text/javascript">
-                                    renderButtonsLinks("tcc", "pt_BR")
-                                </script>
-                            </a>
-                            <a target="_blank" id="button_guide">
-                                <script type="text/javascript">
-                                    renderButtonsLinks("guide", "pt_BR")
-                                </script>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section> -->
-    <!-- </main> -->
 
     <section id="return">
         <div class="container-fluid">
@@ -233,6 +163,8 @@
     <script src="assets/js/Projects.js"></script>
     <script src="assets/js/Title.js"></script>
     <script src="assets/js/common.js"></script>
+    <script src="libs/masonry/masonry.js"></script>
+    <script src="libs/imagesloaded/imagesloaded.js"></script>
 </body>
 
 </html>

@@ -1,26 +1,20 @@
 const img_projeto_locacao_v2 = "assets/img/project/projeto_locacao_v2.png";
-const img_marama = "assets/img/project/marama.png"
+const img_marama = "assets/img/project/marama.png";
 //import * as img_marama from 'assets/img/project/marama.png';
-const img_todo = "assets/img/project/task-reactnative.jpg"
-const img_mks = "assets/img/project/mks.png"
-const img_codeleap = "assets/img/project/CodeLeap.png"
-const img_rocketseat = "assets/img/project/estudo-react-rocketseat.png"
-const img_to_do = "assets/img/project/to-do.png"
-const img_contador_gasto = "assets/img/project/controle-gastos.png"
-const img_projeto_alura = "assets/img/project/projeto_alura.png"
-const img_projeto_locacao_v1 = "assets/img/project/rent-management.png"
-const img_portfolio_edna = "assets/img/project/portfolio-edna.png"
-const img_iot_guide = "assets/img/project/iot-guide-full.png"
-const img_controle_gastos = "assets/img/project/controle-gastos-2.0.png"
-const img_backend_project = "assets/img/project/backend.jpg"
-const img_goledger = "assets/img/project/goledger.png"
-const img_b7 = "assets/img/project/challenge-b7.png"
-
-const teste = document.getElementById("projects_content_cards");
-
-function handleRenderProjects(language) {
-    render(language);
-}
+const img_todo = "assets/img/project/task-reactnative.jpg";
+const img_mks = "assets/img/project/mks.png";
+const img_codeleap = "assets/img/project/CodeLeap.png";
+const img_rocketseat = "assets/img/project/estudo-react-rocketseat.png";
+const img_to_do = "assets/img/project/to-do.png";
+const img_contador_gasto = "assets/img/project/controle-gastos.png";
+const img_projeto_alura = "assets/img/project/projeto_alura.png";
+const img_projeto_locacao_v1 = "assets/img/project/rent-management.png";
+const img_portfolio_edna = "assets/img/project/portfolio-edna.png";
+const img_iot_guide = "assets/img/project/iot-guide-full.png";
+const img_controle_gastos = "assets/img/project/controle-gastos-2.0.png";
+const img_backend_project = "assets/img/project/backend.jpg";
+const img_goledger = "assets/img/project/goledger.png";
+const img_b7 = "assets/img/project/challenge-b7.png";
 
 const projectsData = {
     title: {
@@ -336,8 +330,10 @@ const projectsData = {
     ]
 }
 
-function render(language) {
-    if(language != "en" && language != "pt") return false;
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("renderizei os projetos");
+
+    const language = window.location.pathname.includes("en") ? "en" : "pt";
 
     const headerTitle = document.querySelector("#projects .headerSection h2");
     if (headerTitle) {
@@ -351,7 +347,7 @@ function render(language) {
     input.addEventListener("input", function (event) {
         renderProjects(event.target.value, language);
     });
-}
+});
 
 function renderProjects(inputValue, language) {
     var searchTerm = undefined;
@@ -361,6 +357,7 @@ function renderProjects(inputValue, language) {
     var technologies = "";
     var links = "";
 
+    const teste = document.getElementById("projects_content_cards");
     teste.innerHTML = "";
 
     if (inputValue) {
@@ -420,5 +417,22 @@ function renderProjects(inputValue, language) {
         `;
 
         teste.innerHTML = body;
+
+        // Aguarda o carregamento das imagens antes de aplicar o Masonry
+        imagesLoaded(teste, function () {
+            new Masonry(teste, {
+                itemSelector: '.col-sm-6', // ou apenas '.col'
+                percentPosition: true
+            });
+        });
     });
+
+    // var msnry = new Masonry('#projects_content_cards', {
+    //     itemSelector: '.col',
+    //     percentPosition: true
+    // });
+
+    // console.log(msnry)
+
+    
 }

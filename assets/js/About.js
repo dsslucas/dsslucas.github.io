@@ -359,8 +359,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const language = window.location.pathname.includes("en") ? "en" : "pt";
 
-    console.log(language);
-
     // Render Title
     const headerTitle = document.querySelector("#about .headerSection h2");
     if (headerTitle) {
