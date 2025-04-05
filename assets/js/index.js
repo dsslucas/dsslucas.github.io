@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector('nav');
     const buttonCollapse = document.getElementById("botao-collapse");
     const buttonOptions = document.getElementById('navbar_menu_options');
+    const aboutContentSection = document.getElementById("about_content_details");
+    const projectContentCards = document.getElementById("projects_content_cards");
 
-    // Esconde inicialmente
     returnSection.style.display = "none";
     nav.classList.add('navbar-dark');
 
@@ -17,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         buttonCollapse.classList.add('collapsed');
         buttonCollapse.ariaExpanded = false;
         buttonOptions.classList.remove("show");
+
+        // Scroll About Content
+        aboutContentSection.scrollTo({ top: 0, behavior: "smooth" });
+        projectContentCards.scrollTo({ top: 0, behavior: "smooth" });
 
         const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
 
