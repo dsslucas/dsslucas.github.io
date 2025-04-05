@@ -459,7 +459,7 @@ function renderAboutContent(type, language) {
                 : "";
 
             content += `
-                <article>
+                <article class="fadeIn">
                     <span class="about_content_indicator">
                         <i class="fa fa-solid fa-${element.icon}"></i>
                     </span>
