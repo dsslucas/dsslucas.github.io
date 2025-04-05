@@ -11,7 +11,7 @@ var buttonReturn = document.getElementById("return")
 window.addEventListener('load', function () {
     nav.classList.add('navbar-dark')
 
-    buttonReturn.style.display = "none"
+    // buttonReturn.style.display = "none"
 
     if (window.pageYOffset > 360) {
         nav.classList.remove('navbar-dark')

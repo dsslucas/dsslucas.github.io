@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-body>section {
+body>section:not(#return) {
     width: 100svw;
     height: 100svh;
     display: flex;
@@ -27,14 +27,14 @@ body>section {
     overflow-x: hidden;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) and (orientation: portrait){
+@media (min-width: 320px) and (max-width: 1200px) and (orientation: portrait) {
     body>section {
         min-height: 100svh;
         overflow-y: auto;
     }
 }
 
-@media (min-width: 320px) and (max-width: 1200px) and (orientation: landscape){
+@media (min-width: 320px) and (max-width: 1200px) and (orientation: landscape) {
     body>section {
         height: 100svh !important;
         overflow-y: auto;
@@ -47,6 +47,33 @@ body>section {
         max-width: 95% !important;
         width: 95% !important;
     }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Return button */
+#return {
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    
+}
+
+#return a {
+    height: 30px;
+    width: 30px;
+    background-color: #0097c0;
+    color: #ffffff;
+}
+
+#return a:hover {
+    filter: brightness(0.9);
+    transform: scale(1.1);
 }
 
 /* Icons */
@@ -73,7 +100,7 @@ body>section {
     font-size: 1.4rem;
 }
 
-.items a:hover, 
+.items a:hover,
 #projects #projects_content_cards .card-footer a:hover {
     color: #0097c0;
 }
@@ -194,9 +221,9 @@ button:hover {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
