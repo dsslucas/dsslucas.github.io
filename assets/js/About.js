@@ -369,8 +369,6 @@ document.addEventListener("DOMContentLoaded", function () {
     renderAboutButtons(aboutContentButtons, language);
 
     aboutContentButtons.addEventListener("click", function (event) {
-        console.log("oi")
-        console.log(event.target.id)
         renderAboutContent(event.target.id, language);
     });
 

@@ -141,7 +141,7 @@
 
 #about_content #about_content_details .about_content_info header .about_content_info_header_principal small {
     color: rgb(116, 116, 116);
-    text-transform: uppercase;
+    font-size: small;
 }
 
 #about_content #about_content_details .about_content_info header .about_content_info_header_links {
