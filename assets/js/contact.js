@@ -62,9 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
         navigator.clipboard.writeText(text);
     }
 
-    const redirectContactButtonClicked = document.getElementsByClassName("redirectContactButtonClicked");
-    
-    redirectContactButtonClicked.addEventListener("click", function (event){
-        console.log("cliquei");
-    })
+    document.addEventListener("click", function (event) {
+        const button = event.target.closest(".redirectContactButtonClicked");
+        if (button) {
+            const value = button.getAttribute("url");
+            if (value) {
+                copyToClipboard(value);
+                console.log(`Copiado: ${value}`);
+            }
+        }
+    });
 })
