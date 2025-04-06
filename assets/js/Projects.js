@@ -384,7 +384,7 @@ function renderProjects(inputValue, language) {
                 else if (item.type === "Github") classIcon = "fa-brands fa-github";
 
                 links += `
-                    <a href=${item.url} target="_blank" class="btn btn-sm btn-outline-secondary redirectButton" title="Website">
+                    <a href=${item.url} target="_blank" class="redirectButton" title="Website">
                         <i class="fa ${classIcon}"></i>
                     </a>
                 `;

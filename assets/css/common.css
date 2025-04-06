@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-body>section:not(#return) {
+main>section:not(#return), #contact {
     width: 100svw;
     height: 100svh;
     display: flex;
@@ -28,14 +28,14 @@ body>section:not(#return) {
 }
 
 @media (min-width: 320px) and (max-width: 1200px) and (orientation: portrait) {
-    body>section {
+    main>section, #contact {
         min-height: 100svh;
         overflow-y: auto;
     }
 }
 
 @media (min-width: 320px) and (max-width: 1200px) and (orientation: landscape) {
-    body>section {
+    main>section, #contact {
         height: 100svh !important;
         overflow-y: auto;
     }
@@ -177,9 +177,18 @@ button:hover {
 
 /* Redirect button */
 .redirectButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: .25rem .5rem;
     font-size: .875rem;
     border-radius: 50%;
+    background-color: transparent;
+    text-decoration: none;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    height: 30px;
+    width: 30px;
 }
 
 .redirectButton:hover {

@@ -120,6 +120,6 @@
 }
 
 #projects #projects_content_cards .card-footer {
-    /* display: flex; */
+    display: flex;
     gap: 0.5rem;
 }

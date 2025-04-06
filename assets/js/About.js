@@ -436,7 +436,7 @@ function renderAboutContent(type, language) {
                         title = 'Link';
                 }
 
-                return `<a href="${link.url}" target="_blank" class="btn btn-sm btn-outline-secondary redirectButton" title="${title}">
+                return `<a href="${link.url}" target="_blank" class="redirectButton">
                             <i class="${iconClass}"></i>
                         </a>`;
             }).join('');
