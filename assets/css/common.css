@@ -45,7 +45,7 @@ main>section:not(#return), #contact {
 @media only screen and (min-width: 720px) {
     .container {
         max-width: 95% !important;
-        width: 95% !important;
+        width: 93% !important;
     }
 }
 
