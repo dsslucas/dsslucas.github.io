@@ -17,7 +17,7 @@ body {
 
 main>section:not(#return), #contact {
     width: 100svw;
-    height: 100svh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,14 +29,14 @@ main>section:not(#return), #contact {
 
 @media (min-width: 320px) and (max-width: 1200px) and (orientation: portrait) {
     main>section, #contact {
-        min-height: 100svh;
+        min-height: 100dvh;
         overflow-y: auto;
     }
 }
 
 @media (min-width: 320px) and (max-width: 1200px) and (orientation: landscape) {
     main>section, #contact {
-        height: 100svh !important;
+        height: 100dvh !important;
         overflow-y: auto;
     }
 }
@@ -137,7 +137,7 @@ p {
 .headerSection {
     display: flex;
     /* align-items: center; */
-    height: calc(100svh - 60px - 10px);
+    height: calc(100dvh - 60px - 10px);
     /* background-color: gold; */
 }
 
