@@ -28,6 +28,23 @@ const projectsData = {
     projects: [
         {
             title: {
+                en: "Practical Test - Meetime",
+                pt: "Teste Prático - Meetime"
+            },
+            description: {
+                pt: "Aplicação backend integrada aos serviços de login e contato do HubSpot.",
+                en: "Backend application integrated within HubSpot login and contact services."
+            },
+            technologies: ["Java", "Spring Boot", "HubSpot", "OAuth2"],
+            thumbnail: img_backend_project,
+            links: [
+                {
+                    type: "Github",
+                    url: "https://github.com/dsslucas/auth-test-meetime"
+                }
+            ]
+        }, {
+            title: {
                 pt: "Desafio Fullstack - B7",
                 en: "Fullstack Challenge - B7"
             },
@@ -417,12 +434,12 @@ function renderProjects(inputValue, language) {
         `;
 
         teste.innerHTML = body;
-        
+
         imagesLoaded(teste, function () {
             new Masonry(teste, {
                 itemSelector: '.col-sm-6',
                 percentPosition: true
             });
         });
-    });    
+    });
 }
