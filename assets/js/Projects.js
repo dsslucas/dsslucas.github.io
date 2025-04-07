@@ -409,7 +409,7 @@ function renderProjects(inputValue, language) {
         }
 
         body += `
-            <div class="col-sm-6 col-lg-3 mb-4 ps-0">
+            <div class="col-sm-6 col-xl-3 mb-4 ps-0">
                 <div class="card fadeIn">
                     <div class="card-image">
                         <img src=${element.thumbnail} class="card-img-top img-thumbnail"
