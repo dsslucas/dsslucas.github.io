@@ -30,6 +30,7 @@
     gap: 1rem;
     background-color: #ffffff;
     max-height: 98%;
+    border-radius: .25rem;
 }
 
 #about_content #about_content_buttons {

@@ -24,6 +24,7 @@
 
 #contact #contact_image img {
     width: 100%;
+    border-radius: .25rem;
 }
 
 #contact .contact_item {
@@ -33,6 +34,7 @@
     border: 1px solid #6c757d;
     padding: 0.5rem;
     width: 100%;
+    border-radius: .25rem;
 }
 
 #contact #contact_content {
