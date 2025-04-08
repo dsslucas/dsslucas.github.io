@@ -373,8 +373,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     renderAboutContent("experiences", language);
-
-    console.log(aboutData)
 });
 
 function renderAboutButtons(aboutContentButtons, language) {
