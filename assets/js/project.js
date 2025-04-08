@@ -348,8 +348,6 @@ const projectsData = {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("renderizei os projetos");
-
     const language = window.location.pathname.includes("en") ? "en" : "pt";
 
     const headerTitle = document.querySelector("#projects .headerSection h2");

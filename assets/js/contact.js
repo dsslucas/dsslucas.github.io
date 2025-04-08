@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const value = button.getAttribute("url");
             if (value) {
                 copyToClipboard(value);
-                console.log(`Copiado: ${value}`);
             }
         }
     });
