@@ -1,283 +1,47 @@
-/* #presentation img {
-    width: 33.75rem;
-    border-radius: 0.5rem;
+#presentation {
+    background-color: #1a1a1a !important;
+    color: #e5e5e5;
 }
 
-#presentation .column-image,
-#presentation .column-content {
-    display: flex;
-    flex-direction: column;
-}
-
-#presentation .column-image {
-    justify-content: center;
-    align-items: center;
-}
-
-#presentation .contact-info a,
-#contato p i {
-    font-size: 1.875rem;
-    color: white;
-    margin-left: 0.313rem;
-    margin-right: 0.313rem;
-}
-
-#presentation i:hover,
-#contato i:hover {
-    color: #00BCEF
-} */
-
-#presentation > .container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-#presentation_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;        
-}
-
-#presentation_wrapper > .column-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#presentation h1, p {
+    text-transform: none;
 }
 
 #presentation p {
-    margin-left: 0;
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 576px){
-    #presentation_wrapper {
-        flex-direction: column;     
+/* Image */
+@media only screen and (min-width: 320px) and (orientation: portrait){
+    #presentation .row {
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    #presentation_wrapper > .column-image {
-        height: 80%;
-    }
-
-    #presentation_wrapper > .column-image > img {
+    #presentation img {
         width: 80%;
-        height: 80%
     }
 
-    #presentation_wrapper > .column-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #presentation_info * {
         justify-content: center;
-        height: 20%;
-        margin-top: 10px;
-    }
-
-    #presentation_wrapper #h1-presentation {
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-    #presentation_wrapper p {
-        margin-bottom: 0;
-    }
-
-    #presentation_wrapper a {
-        font-size: x-large;
-        text-decoration: none;
+        text-align: center;
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px){
-    #presentation_wrapper {
-        flex-direction: row;     
-    }
-
-    #presentation_wrapper > .column-image {
-        height: 100%;
-    }
-
-    #presentation_wrapper > .column-image > img {
-        width: 100%;
-        height: 100%
-    }
-
-    #presentation_wrapper > .column-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 100%;
-        margin-top: 10px;
-    }
-
-    #presentation_wrapper #h1-presentation {
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-    #presentation_wrapper p {
-        margin-bottom: 0;
-    }
-
-    #presentation_wrapper a {
-        font-size: x-large;
-        text-decoration: none;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    #presentation_wrapper {
-        flex-direction: column;     
-    }
-
-    #presentation_wrapper > .column-image {
-        height: 100%;
-    }
-
-    #presentation_wrapper > .column-image > img {
-        width: 80%;
-        height: 80%
-    }
-
-    #presentation_wrapper > .column-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        margin-top: 10px;
-    }
-
-    #presentation_wrapper #h1-presentation {
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-    #presentation_wrapper p {
-        margin-bottom: 0;
-        font-size: large;
-    }
-
-    #presentation_wrapper a {
-        font-size: x-large;
-        text-decoration: none;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    #presentation_wrapper {
-        flex-direction: column;     
-    }
-
-    #presentation_wrapper > .column-image {
-        height: 100%;
-    }
-
-    #presentation_wrapper > .column-image > img {
-        width: 80%;
-        height: 80%
-    }
-
-    #presentation_wrapper > .column-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        margin-top: 10px;
-    }
-
-    #presentation_wrapper #h1-presentation {
-        font-size: xx-large;
-        font-weight: bold;
-    }
-
-    #presentation_wrapper p {
-        margin-bottom: 0;
-        font-size: x-large;
-    }
-
-    #presentation_wrapper a {
-        font-size: xx-large;
-        text-decoration: none;
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width:1400px){
-    #presentation_wrapper {
-        flex-direction: row;     
-    }
-
-    #presentation_wrapper > .column-image {
-        height: 100%;
-    }
-
-    #presentation_wrapper > .column-image > img {
+@media only screen and (min-width: 720px) {
+    #presentation_photo img {
         width: 70%;
-        height: 70%
-    }
-
-    #presentation_wrapper > .column-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100%;
-        margin-top: 10px;
-    }
-
-    #presentation_wrapper #h1-presentation {
-        font-size: xx-large;
-        font-weight: bold;
-    }
-
-    #presentation_wrapper p {
-        margin-bottom: 0;
-        font-size: x-large;
-    }
-
-    #presentation_wrapper a {
-        font-size: xx-large;
-        text-decoration: none;
     }
 }
 
-@media only screen and (min-width: 1400px){
-    #presentation_wrapper {
-        flex-direction: row;     
-    }
-
-    #presentation_wrapper > .column-image {
-        height: 100%;
-    }
-
-    #presentation_wrapper > .column-image > img {
-        width: 70%;
-        height: 100%
-    }
-
-    #presentation_wrapper > .column-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100%;
-        margin-top: 10px;
-    }
-
-    #presentation_wrapper #h1-presentation {
-        font-size: xx-large;
-        font-weight: bold;
-    }
-
-    #presentation_wrapper p {
-        margin-bottom: 0;
-        font-size: x-large;
-    }
-
-    #presentation_wrapper a {
-        font-size: xx-large;
-        text-decoration: none;
-    }
+#presentation .container div {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
 }
 
+#presentation_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}

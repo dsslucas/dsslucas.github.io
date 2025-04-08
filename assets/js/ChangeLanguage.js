@@ -1,2 +1,0 @@
-document.getElementsByName("En")
-
