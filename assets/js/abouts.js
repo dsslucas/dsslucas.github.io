@@ -355,8 +355,6 @@ const aboutData = {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("renderizei");
-
     const language = window.location.pathname.includes("en") ? "en" : "pt";
 
     // Render Title
@@ -373,8 +371,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     renderAboutContent("experiences", language);
-
-    console.log(aboutData)
 });
 
 function renderAboutButtons(aboutContentButtons, language) {
@@ -382,7 +378,6 @@ function renderAboutButtons(aboutContentButtons, language) {
         var buttons = "";
 
         aboutData.buttons.forEach((element) => {
-            console.log(element)
             buttons += `
                 <button id="${element.id}">
                     ${element.label[language]}
@@ -401,7 +396,6 @@ function renderAboutContent(type, language) {
     aboutContentSection.scrollTo({ top: 0, behavior: "smooth" });
 
     if (Array.isArray(aboutData[type])) {
-        console.log(aboutData[type])
         aboutData[type].forEach((element) => {
             const title = element.title ? element.title[language] : undefined;
             const assignment = element.assignment ? element.assignment[language] : undefined;

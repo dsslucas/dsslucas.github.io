@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttonCollapse.addEventListener("click", () => {
         const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
-        console.log("SCROLL: ", scrolled)
         if (scrolled > 0) {
             nav.classList.remove('bg-dark');
             nav.classList.add('bg-light');
