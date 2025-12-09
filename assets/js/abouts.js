@@ -96,8 +96,8 @@ const aboutData = {
                 en: "Hybrid",
                 pt: "Híbrido"
             },
-            startDate: new Date("2023-06-02"),
-            endDate: new Date("2023-08-02"),
+            startDate: new Date("2022-01-23"),
+            endDate: new Date("2022-12-04"),
             responsabilities: {
                 en: [
                     "Creating a page in React.js to register complaints with the Civil Police of Mato Grosso",
